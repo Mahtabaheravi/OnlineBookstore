@@ -207,14 +207,7 @@ button {
    font-weight: 600;
    letter-spacing: 2px;
 }
-.library-header a{
-    color: #777168;
-    font-size: 11px;
-}
-.library-header a:hover{
-    color: var(--gold-dark);
 
-}
 .shelf-section{
     margin-top: 16px;
     position: relative;
@@ -222,7 +215,8 @@ button {
 .shelf-title{
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    justify-content: space-between;
+    padding-left: 0 15px;
     margin-bottom: 8px;
     color: #777168;
     font-size: 10px;
@@ -233,6 +227,14 @@ button {
 .shelf-title span{
     color: var(--gold);
     font-size: 9px;
+}
+.shelf-title a{
+    color: #777168;
+    font-size: 11px;
+}
+.shelf-title a:hover{
+    color: var(--gold-dark);
+
 }
 .books{
     height: 137px;
@@ -539,7 +541,7 @@ button {
 }
 .price-row{
     display: flex;
-    justify-content: center;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 4px;
@@ -549,7 +551,7 @@ button {
     font-size: 15px;
     font-weight: 600;
 }
-.card-btn{
+.cart-btn{
     width: 36px;
     height: 36px;
     border: none;
@@ -562,7 +564,76 @@ button {
     cursor: pointer;
     transition: 0.3s ease;
 }
-.card-btn:hover{
+.cart-btn:hover{
     background: var(--gold);
     transform: translateY(-2px);
 }
+.authors-section{
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 5%;
+}
+.author-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px 28px;
+    margin-top: 130px;
+}
+.author-card{
+    position: relative;
+    border-radius: 18px;
+    padding: 78px 18px 26px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(90, 70, 40, 0.14);
+    transition: transform 0.4s ease, box-shodow 0.4s ease;
+
+}
+.author-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 28px 45px rgba(90, 70, 40, 0.22);
+}
+.author-img{
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.author-info{
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+
+}
+
+.author-info p{
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+}
+.author-info p span{
+    font-weight: 600;
+    color: #fff;
+}
+.card1{
+    background: var(--gold-dark);
+}
+.card2{
+    background-color: var(--gold-light);
+}
+.card3{
+    background-color: var(--gold);
+}
+.card4{
+    background-color: var(--muted);
+}
+
+
+
+
