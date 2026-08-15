@@ -44,15 +44,18 @@ button {
 }
 .navbar{
     width: 100%;
-    height: 86px;
+    height: 75px;
     padding: 0 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(248, 245, 239, 0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(180, 147, 91, 0.22);
-    position: relative;
-    z-index: 100;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo{
     color: var(--gold);
@@ -107,6 +110,119 @@ button {
 .navigation a.active::after{
     transform: translateX(-50%) scale(1);
     
+}
+.nav-action{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.nav-icon{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--text);
+    font-size: 16px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.nav-count{
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    min-height: 16px;
+    height: 16px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold-dark);
+    border-radius: 50%;
+    color: white;
+    font-size: 9px;
+    font-weight: 600;
+}
+.search-btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+.account-dropdown{
+    position: relative;
+}
+.account-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 13px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.account-btn:hover{
+    border-color: var(--gold);
+    color: var(--gold-dark);
+}
+.account-arrow{
+    font-size: 8px;
+    transition: transform 0.3s ease;
+}
+.account-dropdown:hover .account-arrow{
+    transform: rotate(180deg);
+}
+.account-menu{
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 190px;
+    padding: 8px;
+    background: var(--cream-light);
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(60, 45, 25, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 300;
+}
+.account-dropdown:hover .account-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.account-menu a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 11px;
+    color: var(--muted);
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.25s ease;
+
+}
+.account-menu a i{
+    width: 16px;
+    color: var(--gold-dark);
+    font-size: 12px;
+}
+.account-menu a:hover{
+    background: #f4ead9;
+    color: var(--gold-dark);
+    transform: translateY(2px);
+}
+.account-divider{
+    height: 1px;
+    margin: 7px 5px;
+    background: var(--border);
 }
 .hero{
     min-height: calc(100vh - 86px);
@@ -482,6 +598,37 @@ button {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+.favorite-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    color: var(--gold-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.3s ease;
+}
+.favorite-btn i{
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.favorite-btn:hover{
+    transform: scale(1.1);
+}
+.favorite-btn .active{
+    color: #c62828;
+
+}
+.favorite-btn .active i{
+    font-weight: 900;
 }
 .shop-card:hover .shop-card-cover{
     transform: rotateY(-12deg) rotateX(4deg) scale(1.08) translateZ(20px);
