@@ -1009,3 +1009,284 @@ button {
 .all-genres:hover i {
     transform: translateX(5px);
 }
+.discount-section{
+    max-width: 1150px;
+    margin: 75px auto;
+    padding: 0 5%;
+}
+.discount-warpper{
+    display: grid;
+    position: relative;
+    grid-template-columns: 28% 72%;
+    min-height: 350px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: radial-gradient(
+        circle at 85% 20%, rgba(216, 196, 154, 0.30),
+        transparent 35%),
+        linear-gradient(
+        135deg, #f3ead9, #e9dcc2
+        );
+    border: 1px solid rgba(180, 147, 91, 0.25);
+    box-shadow: 0 18px 40px rgba(140, 112, 63, 0.10);
+
+}
+.discount-intro{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 15px 35px 35px;
+    color: var(--text);
+    z-index: 2;
+}
+.discount-week{
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: var(--gold-dark);
+}
+.discount-line{
+    width: 35px;
+    height: 1px;
+    margin: 12px 0 15px;
+    background: var(--gold);
+}
+.discount-intro h2{
+    font-family: "PlayFair Display";
+    font-size: 38px;
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: var(--text);
+}
+.discount-intro h2 em{
+    display: block;
+    color: var(--gold-dark);
+    font-style: italic;
+}
+.discount-intro p{
+    max-width: 220px;
+    margin-top: 16px;
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+.discount-offer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 19px;
+}
+.offer-num{
+    color: var(--gold-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    line-height: 1;
+    
+}
+.offer-text{
+    display: block;
+    color: var(--muted);
+    font-size: 6px;
+    letter-spacing: 1.2px;
+}
+.offer-label{
+    display: block;
+    margin-top: 2px;
+    color: var(--gold-dark);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+.discount-link{
+    display: inline-block;
+    margin-top: 18px;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--gold-dark);
+    color: var(--gold-dark);
+    font-size: 9px;
+    transition: 0.3s ease;
+}
+.discount-link i{
+    font-size: 9px;
+    transition: transform 0.3s ease;
+}
+.discount-line:hover{
+    color: var(--text);
+}
+.discount-link:hover i{
+    transform: translateX(4px);
+}
+.discount-slider{
+    position: relative;
+    min-width: 0;
+    padding: 27px 25px 22px 5px;
+    background: linear-gradient(
+        90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.25)
+    );
+}
+.discount-slidertop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 8px;
+}
+.discount-slidertop span{
+    font-size: 7px;
+    font-weight: 600;
+    color: var(--gold-dark);
+    letter-spacing: 1.8px;
+}
+.slider-controls{
+    display: flex;
+    gap: 6px;
+}
+.slider-btn{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(180, 149, 91, 0.35);
+    border-radius: 50%;
+    background: rgba(253, 251, 247, 0.55);
+    color: var(--gold-dark);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+}
+.slider-btn:hover{
+    background: var(--gold-light);
+    color: white;
+    transform: translateY(-2px);
+}
+.slider-btn i{
+    font-size: 9px;
+}
+.discount-viewport{
+    width: 100%;
+    overflow: hidden;
+    padding: 7px 5px 15px;
+}
+.discount-track{
+    display: flex;
+    gap: 15px;
+    transition: transform 0.6s ease;
+}
+.discount-card{
+    position: relative;
+    flex: 0 0 155px;
+    padding: 9px 9px 13px;
+    border-radius: 8px;
+    background: rgba(253, 252, 247, 0.95);
+    border: 1px solid rgba(222,215,202,0.8);
+    box-shadow: 0 9px 18px rgba(90, 70, 40, 0.10);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.discount-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 16px 25px rgba(90, 70, 40, 0.16);
+}
+.discount-cover{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #e9e0d0;
+    box-shadow: 2px 6px 9px rgba(50, 40, 25, 0.14);
+}
+.discount-cover img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.discount-card:hover .discount-cover img{
+    transform: scale(1.04);
+}
+.discount-badge{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 3;
+    min-width: 37px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    border-radius: 3px;
+    background: linear-gradient(
+        135deg, #a27c42, #d4b46d, #a27c42
+    );
+    color: white;
+    font-size: 8px;
+    font-weight: 600;
+    box-shadow: 0 3px 7px rgba(70, 50, 20, 0.18);
+}
+.discount-info{
+    padding: 9px 1px 0;
+    text-align: left;
+}
+.discount-category{
+    color: var(--gold);
+    font-size: 6px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.discount-info h3{
+    margin-top: 4px;
+    color: var(--text);
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.discount-info p{
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 8px;
+}
+.discount-price{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 7px;
+}
+.old-price{
+    color: #aaa39a;
+    font-size: 8px;
+    text-decoration: line-through;
+}
+.new-price{
+    color: var(--gold-dark);
+    font-size: 11px;
+    font-weight: 600;
+}
+.slider-indicators{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 0;
+}
+.indicators{
+    width: 12px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(180, 147, 91, 0.25);
+    transition: width 0.3s ease, background 0.3s ease;
+}
+.indicators.active{
+    width: 25px;
+    background: var(--gold);
+}
