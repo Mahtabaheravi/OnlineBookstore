@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shamama Bookstore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/author.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+       <img src="pic/lastlogo.png" alt="logo">
+       <span>Shamama</span>
+        </div>
+       <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="">All Books</a>
+        <a href="">Categories</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+       </nav>
+       <div class="nav-action">
+         <button class="nav-icon search-btn" aria-label="Search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+         <a href="#" class="nav-icon" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="nav-count">0</span>
+         </a>
+         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-count">0</span>
+           </a>
+           <div class="account-dropdown">
+           <button class="account-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+            <i class="fa-solid fa-chevron-down account-arrow"></i>
+           </button>
+           <div class="account-menu">
+            <a href="#">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user-plus"></i>
+                Creat Account
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-box"></i>
+                My Order
+            </a>
+            <div class="account-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+           </div>
+           </div>
+       </div>
+</header>
+
+
+<main class="author-page">
+    <div class="author-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#">Authors</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Fyodor Dostoevsky</span>
+    </div>
+    <section class="author-hero">
+        <div class="hero-number"> 01</div>
+        <div class="author-portrait">
+            <div class="portrait-frame">
+              <img src="pic/dostoevsky.jpg" alt="pic">
+            </div>
+            <div class="portrait-caption">
+                Fyodor Dostoevsky · 1821—1881
+            </div>
+        </div>
+        <div class="author-intro">
+          <span class="author-label">THE AUTHOR</span>
+            <h1>Fyodor<em>Dostoevsky</em></h1>
+            <div class="gold-rule"></div>
+            <p class="author-intro-text">
+                One of the greatest novelists in world literature, Dostoevsky explored the darkest corners of the human
+                mind through stories of guilt, faith, morality,suffering and redemption </p>
+            <div class="author-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Moscow, Russian Empire</span>
+            </div>
+            <a href="#biography" class="discover-btn">
+                Discover His Story<i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="author-facts">
+        <div class="fact">
+            <span class="fact-number">1821</span>
+            <span class="fact-label">Born</span>
+        </div>
+        <div class="fact">
+          <span class="fact-number">1881</span>
+          <span class="fact-label">Died</span>
+        </div>
+        <div class="fact">
+           <span class="fact-number">60</span>
+           <span class="fact-label">Years of Life</span>
+        </div>
+        <div class="fact">
+           <span class="fact-number">19th</span>
+           <span class="fact-label">Century</span>
+        </div>
+        <div class="fact">
+            <span class="fact-number">5+</span>
+            <span class="fact-label"> Major Novels</span>
+        </div>
+    </section>
+
+    <section class="biography-section" id="biography">
+        <div class="section-side-title"> BIOGRAPHY</div>
+        <div class="biography-content">
+            <div class="section-heading">
+                <span>A LIFE IN WORDS</span>
+                <h2>The Mind Behind<em>the Stories</em></h2>
+            </div>
+            <div class="biography-columns">
+                <div class="bio-first-letter"> F</div>
+                <div class="bio-text">
+                    <p>yodor Dostoevsky was born in Moscow in 1821 and became one of the most influential writers
+                        of the nineteenth century. His novels examined the complexities of human consciousness and
+                        the moral choices that shape a person's life.
+                    </p>
+                    <p>His early life was marked by literature,political involvement and profound personal
+                        hardship. In 1849, he was arrested for participating in a literary discussion group
+                        and sentenced to death. The sentence was dramatically commuted at the last moment,
+                        followed by years of imprisonment and exile.
+                    </p>
+                    <p>These experiences deeply influenced his later writing. His characters often struggle with
+                        guilt, freedom, faith, isolation and the possibility of redemption.
+                    </p>
+                </div>
+            </div>
+            <div class="bio-note">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <span>His novels remain among the most studied works of psychological and philosophical literature.</span>
+            </div>
+        </div>
+    </section>
+    <section class="timeline-section">
+        <div class="timeline-heading">
+            <span>A LIFE IN MOMENTS</span>
+            <h2>From Life to Literature</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">1821</span>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>A Beginning in Moscow</h3>
+                <p>Fyodor Dostoevsky was born on October 11, 1821, in Moscow into a literary and educated family.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year">1846</span>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>His First Major Success</h3>
+                    <p>His debut novel, <em>Poor Folk</em>, brought him early recognition among Russian literarycircles.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year">1849</span>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>The Death Sentence</h3>
+                    <p>Dostoevsky was arrested and sentenced to death.The execution was stopped at the last moment, changing his life forever.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year">1866</span>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Crime and Punishment</h3>
+                    <p>One of his most celebrated novels was published, introducing readers to the troubled mind of Raskolnikov.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year"> 1881</span>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>The Final Chapter</h3>
+                    <p>Dostoevsky died in Saint Petersburg at the age of sixty, leaving a lasting influence on world literature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works-section">
+        <div class="works-heading">
+            <div>
+             <span>SELECTED WORKS</span>
+             <h2>His Most Famous Books</h2>
+            </div>
+            <a href="#">View All Books<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="works-display">
+            <article class="work-book">
+                <div class="work-cover">
+                    <span class="work-number">01</span>
+                    <a href="book-detail.html">
+                        <img src="pic/crime-and-punishment-26427-1000x1500-webp.webp" alt="pic">
+                    </a>
+                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="work-info">
+                    <span>1866</span>
+                    <h3>Crime and Punishment</h3>
+                    <p>A psychological journey through guilt,conscience and redemption.</p>
+                    <a href="book-detail.html"> Explore Book<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="work-book">
+                <div class="work-cover">
+                    <span class="work-number">02</span>
+                    <a href="#"><img src="pic/brother.webp" alt="pic"></a>
+                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="work-info">
+                    <span>1880</span>
+                    <h3>The Brothers Karamazov</h3>
+                    <p>A profound exploration of faith, family, morality and human freedom.</p>
+                    <a href="#">Explore Book<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="work-book">
+                <div class="work-cover">
+                    <span class="work-number">03</span>
+                    <a href="#">
+                        <img src="pic/idote.webp" alt="pic">
+                    </a>
+                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="work-info">
+                    <span>1869</span>
+                    <h3>The Idiot</h3>
+                    <p>A story of innocence, compassion and the contradictions of society.</p>
+                    <a href="#"> Explore Book<i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="work-book">
+                <div class="work-cover">
+                    <span class="work-number">04</span>
+                    <a href="#">
+                        <img src="pic/demons.webp" alt="pic">
+                    </a>
+                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="work-info">
+                    <span>1872</span>
+                    <h3>Demons</h3>
+                    <p>A dark political and philosophical portrait of a society in turmoil.</p>
+                    <a href="#">Explore Book<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="author-quote">
+        <div class="quote-line"></div>
+        <span class="quote-label">FROM HIS WRITINGS</span>
+        <blockquote>“The mystery of human existence lies not just in staying alive, but in finding something to live for.”</blockquote>
+        <div class="quote-author">
+            Fyodor Dostoevsky
+        </div>
+        <div class="quote-symbol">
+            ✦
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="why-intro">
+            <span>THE DOSTOEVSKY EXPERIENCE</span>
+            <h2>Why His Stories<em>Still Matter</em></h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <h3>Deep Psychology</h3>
+                <p>His characters reveal the conflicts,fears and desires hidden inside the human mind.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3>Moral Questions</h3>
+                <p>His stories challenge readers to think about guilt, responsibility, freedom and morality.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>Timeless Stories</h3>
+                <p>Although written more than a century ago, his characters and questions remain remarkably relevant.</p>
+            </div>
+        </div>
+    </section>
+    <section class="author-cta">
+        <div class="cta-content">
+            <span>READY TO BEGIN?</span>
+            <h2>Enter the World of<em>Dostoevsky</em></h2>
+            <p>Discover stories that question the mind, challenge the heart and stay with you long after the final page.</p>
+            <a href="#" class="cta-button">
+                Explore His Books<i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
