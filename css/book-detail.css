@@ -521,40 +521,6 @@ button {
 .stay-decoration span:nth-child(3) {
     width: 18px;
 }
-.bd-quote-section {
-    max-width: 800px;
-    margin: 0 auto 95px;
-    padding: 55px 40px;
-    text-align: center;
-    position: relative;
-    background: radial-gradient( circle at 50% 0%,
-            rgba(216, 196, 154, .22),
-            transparent 65% );
-}
-.bd-quote-mark {
-    display: block;
-    font-size: 25px;
-    color: var(--gold);
-    margin-bottom: 20px;
-}
-
-.bd-quote-text {
-    max-width: 720px;
-    margin: auto;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.65;
-    color: var(--text);
-}
-.bd-quote-source {
-    display: block;
-    margin-top: 20px;
-    font-size: 11px;
-    letter-spacing: 1.4px;
-    color: var(--gold-dark);
-}
 .bd-section-title {
     text-align: center;
     margin-bottom: 40px;

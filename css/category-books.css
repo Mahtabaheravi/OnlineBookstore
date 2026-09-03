@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #f8f5ee;
+    --paper: #fdfbf7;
+    --paper-dark: #eee7da;
+    --brown: #4c3a26;
+    --brown-light: #75644d;
+    --gold: #b58a3a;
+    --gold-light: #d8bb78;
+    --gold-bright: #e4c77e;
+    --gold-dark: #8b6829;
+    --text: #29251f;
+    --muted: #8b857b;
+    --border: #ded6c8;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button,
+select {
+    font-family: inherit;
+}
+.collection{
+    max-width: 1180px;
+    margin: 15px auto;
+    padding: 0 30px;
+}
+.collection-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.collection-top h2 {
+    margin-top: 9px;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+.collection-top h2 em{
+    color: var(--gold-dark);
+    font-style: italic;
+}
+.collection-top p{
+    max-width: 230px;
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.8;
+    text-align: right;
+}
+.filter-bar{
+    min-height: 60px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 38px;
+}
+.filter-left{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.filter-title{
+    margin-right: 8px;
+    color: var(--gold-dark);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.filter-title i{
+    margin-right: 5px;
+}
+.filter-button{
+    padding: 8px 13px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--muted);
+    font-size: 9px;
+    cursor: pointer;
+    transition: .3s;
+}
+.filter-button:hover,
+.filter-button.active {
+    border-color: rgba(181, 138, 58, .35);
+    color: var(--gold-dark);
+    background: rgba(181, 138, 58, .07);
+}
+.sort-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 9px;
+}
+.sort-box select{
+    min-width: 120px;
+    padding: 8px;
+    border: 1px solid var(--border);
+    outline: none;
+    background: var(--paper);
+    color: var(--brown);
+    font-size: 9px;
+    cursor: pointer;
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 42px 22px;
+}
+.book-card{
+    min-width: 0;
+    background: transparent;
+    transition: transform .3s ease;
+}
+.book-card:hover{
+    transform: translateY(-4px);
+}
+.book-covers{
+    height: 335px;
+    padding: 8px;
+    position: relative;
+    background: linear-gradient(145deg, #eee6d8, #f7f1e6);
+    border: 1px solid rgba(181, 138, 58, .28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(66, 48, 25, .07);
+}
+.gold-frame{
+    width: 88%;
+    height: 94%;
+    padding: 3px;
+    position: relative;
+    background: linear-gradient( 135deg, #806021, #f0d18a, #a47726, #f5dc99, #8d6825);
+    box-shadow: 0 8px 18px rgba(63, 43, 17, .18);
+}
+.gold-frame::before{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px solid rgba(255, 241, 190, .8);
+    pointer-events: none;
+    z-index: 2;
+}
+.gold-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform .35s ease;
+}
+.book-card:hover .gold-frame img {
+    transform: scale(1.015);
+}
+.book-tag{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    padding: 5px 8px;
+    background: rgba(253, 251, 247, .95);
+    border: 1px solid rgba(181, 138, 58, .35);
+    color: var(--gold-dark);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 5;
+}
+.book-tag.popular,
+.book-tag.bestseller{
+    background: var(--gold-dark);
+    color: white;
+    border-color: var(--gold-bright);
+}
+.heart{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(181, 138, 58, .3);
+    background: rgba(253, 251, 247, .94);
+    color: var(--gold-dark);
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    transition: .3s;
+}
+.book-card:hover .heart {
+    opacity: 1;
+}
+.heart:hover {
+    background: var(--gold-dark);
+    color: white;
+}
+.book-info{
+    padding: 14px 3px 0;
+}
+.genre{
+    color: var(--gold-dark);
+    font-size: 7px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+}
+.book-info h3{
+    margin-top: 7px;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    min-height: 41px;
+}
+.book-info p {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 9px;
+}
+.book-footer {
+    margin-top: 10px;
+    padding-top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+}
+.book-footer strong {
+    color: var(--brown);
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+}
+.rating {
+    color: var(--gold-dark);
+    font-size: 9px;
+}
+.rating i {
+    font-size: 7px;
+}
+.cart-button{
+    width: 100%;
+    height: 34px;
+    margin-top: 10px;
+    border: 1px solid var(--gold-dark);
+    background: transparent;
+    color: var(--gold-dark);
+    font-size: 9px;
+    cursor: pointer;
+    transition: .3s;
+}
+.cart-button i{
+    margin-right: 6px;
+    font-size: 9px;
+}
+.cart-button:hover {
+    background: linear-gradient(110deg, var(--gold-dark),
+            var(--gold-bright), var(--gold-dark));
+    color: white;
+    border-color: var(--gold-bright);
+    box-shadow: 0 4px 12px rgba(181, 138, 58, .22);
+}
+.pagination{
+    margin-top: 65px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-top: 1px solid var(--border);
+}
+.page-number,
+.page-arrow{
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    color: var(--brown-light);
+    font-size: 9px;
+    cursor: pointer;
+    transition: .3s;
+}
+.page-number:hover,
+.page-arrow:hover,
+.page-number.active {
+    border-color: var(--gold);
+    background: var(--gold-dark);
+    color: white;
+}
+.pagination span{
+    color: var(--muted);
+    font-size: 10px;
+    padding: 0 3px;
+}
