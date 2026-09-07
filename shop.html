@@ -3,29 +3,429 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>Readora Online Bookstore</title>
+    <title>Shop | Shamama</title>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-        rel="stylesheet"
-    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-
+    <header class="navbar">
+        <div class="logo">
+       <img src="pic/lastlogo.png" alt="logo">
+       <span>Shamama</span>
+        </div>
+       <nav class="navigation">
+        <a href="index.html" >Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+       </nav>
+       <div class="nav-action">
+         <button class="nav-icon search-btn" aria-label="Search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+         <a href="#" class="nav-icon" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="nav-count">0</span>
+         </a>
+         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-count">0</span>
+           </a>
+           <div class="account-dropdown">
+           <button class="account-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+            <i class="fa-solid fa-chevron-down account-arrow"></i>
+           </button>
+           <div class="account-menu">
+            <a href="#">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user-plus"></i>
+                Creat Account
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-box"></i>
+                My Order
+            </a>
+            <div class="account-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+           </div>
+           </div>
+       </div>
+    
+    </header>
+<main>
+    <section class="shop-intro">
+        <div class="intro-orbit intro-orbit-one"></div>
+        <div class="intro-orbit intro-orbit-two"></div>
+            <div class="intro-content">
+                <span class="intro-kicker">SHAMAMA · BOOK COLLECTION</span>
+                <div class="intro-line"></div>
+                <h1>Books that<em>stay with you.</em></h1>
+                <p>Discover stories selected for curious minds, quiet evenings and readers who believe some books deserve a permanent place on the shelf.</p>
+                <a href="#collection" class="intro-link">
+                    Explore the collection<i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="intro-books">
+                <div class="gold-frame frame-one">
+                    <div class="frame-corner corner-tl"></div>
+                    <div class="frame-corner corner-br"></div>
+                    <div class="intro-book">
+                        <img src="pic/9780099284864.jpg" alt="pic">
+                    </div>
+                </div>
+                <div class="gold-frame frame-two">
+                    <div class="frame-corner corner-tl"></div>
+                    <div class="frame-corner corner-br"></div>
+                    <div class="intro-book">
+                        <img src="pic/81NLDvyAHrL._AC_UF894,1000_QL80_.jpg" alt="pic">
+                    </div>
+                </div>
+                <div class="gold-frame frame-three">
+                    <div class="frame-corner corner-tl"></div>
+                    <div class="frame-corner corner-br"></div>
+                    <div class="intro-book">
+                        <img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="The Metamorphosis">
+                    </div>
+                </div>
+                <span class="intro-word">READ</span>
+            </div>
+        </section>
+    <section class="shop-tools">
+        <div class="filter-heading">
+            <span class="filter-label">
+                <i class="fa-solid fa-sliders"></i>REFINE
+            </span>
+            <h2>Find your next book</h2>
+        </div>
+        <div class="filter-controls">
+            <div class="filter-field search-field">
+                <label for="bookSearch">Search</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="bookSearch" placeholder="Title or author..." data-filter="search">
+                </div>
+            </div>
+            <div class="filter-field">
+                <label for="categoryFilter">Category</label>
+                    <div class="select-wrap">
+                    <select id="categoryFilter" data-filter="category">
+                            <option value="all">All Categories</option>
+                            <option value="classic">Classics</option>
+                            <option value="romance">Romance</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="psychology">Psychology</option>
+                            <option value="children">Children</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="filter-field">
+                    <label for="authorFilter">Author</label>
+                    <div class="select-wrap">
+                        <select id="authorFilter" data-filter="author">
+                            <option value="all">All Authors</option>
+                            <option value="kafka">Franz Kafka</option>
+                            <option value="austen">Jane Austen</option>
+                            <option value="tolkien">J.R.R. Tolkien</option>
+                            <option value="dostoevsky">Fyodor Dostoevsky</option>
+                            <option value="saint-exupery">Antoine de Saint-Exupéry</option>
+                            <option value="maugham">Somerset Maugham</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="filter-field">
+                    <label for="priceFilter">Price</label>
+                    <div class="select-wrap">
+                        <select id="priceFilter" data-filter="price">
+                            <option value="all">Any Price</option>
+                            <option value="under15">Under $15</option>
+                            <option value="15-25">$15 - $25</option>
+                            <option value="25-40">$25 - $40</option>
+                            <option value="over40">Over $40</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="filter-field">
+                    <label for="sortFilter">Sort by</label>
+                    <div class="select-wrap">
+                        <select id="sortFilter" data-filter="sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="collection" id="collection">
+        <div class="collection-heading">
+            <div>
+                <span class="collection-kicker">THE LIBRARY</span>
+                <h2>Our Collection</h2>
+                </div>
+                <div class="collection-count">
+                    Showing <strong>10</strong> books
+            </div>
+        </div>
+        <div class="books-list" id="booksGrid">
+            <article class="book-row" data-title="The Metamorphosis" data-author="kafka" data-category="classic fiction"
+                    data-price="21.14"
+                    data-rating="3.9">
+                <div class="book-visual">
+                <a href="book-detail.html" class="book-object">
+                    <div class="gold-book-frame">
+                        <span class="frame-shine"></span>
+                            <img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="pic">
+                    </div>
+                </a>
+                    <button class="wishlist-btn" type="button" aria-label="Add The Metamorphosis to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="book-details">
+                    <span class="book-category">CLASSIC</span>
+                    <h3>The Metamorphosis</h3>
+                    <p class="book-author">Franz Kafka</p>
+                    <p class="book-description">A haunting and unforgettable story of identity, isolation and transformation.</p>
+                    <div class="book-meta">
+                        <div class="rating">
+                            <span class="stars">★★★★<i>★</i></span>
+                            <span>3.9</span>
+                        </div>
+                        <span class="detail-divider"></span>
+                        <strong class="book-price">$21.14</strong>
+                        <button class="cart-btns" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to cart</span>
+                        </button>
+                        </div>
+                </div>
+            </article>
+            <article class="book-row" data-title="The Lord of the Rings"
+                    data-author="tolkien"
+                    data-category="fiction"
+                    data-price="28.18"
+                    data-rating="4.5">
+                    <div class="book-visual">
+                    <a href="book-detail.html" class="book-object">
+                        <div class="gold-book-frame">
+                            <span class="frame-shine"></span>
+                            <img src="pic/33.jpg" alt="pic">
+                        </div>
+                    </a>
+                        <button class="wishlist-btn" type="button" aria-label="Add The Lord of the Rings to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="book-details">
+                        <span class="book-category">FANTASY</span>
+                        <h3>The Lord of the Rings</h3>
+                        <p class="book-author">J.R.R. Tolkien</p>
+                        <p class="book-description">
+                            An epic journey through Middle-earth filled with friendship, courage and unforgettable adventure.
+                        </p>
+                        <div class="book-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span>4.5</span>
+                            </div>
+                            <span class="detail-divider"></span>
+                            <strong class="book-price">$28.18</strong>
+                            <button class="cart-btns" type="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Add to cart</span>
+                            </button>
+                        </div>
+                </div>
+            </article>
+            <article class="book-row" data-title="The Little Prince" data-author="saint-exupery"
+                    data-category="children fiction"
+                    data-price="10"
+                    data-rating="4.3">
+                <div class="book-visual">
+                    <a href="book-detail.html" class="book-object">
+                        <div class="gold-book-frame">
+                            <span class="frame-shine"></span>
+                            <img src="pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg" alt="pic">
+                        </div>
+                    </a>
+                    <button class="wishlist-btn" type="button"
+                            aria-label="Add The Little Prince to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="book-details">
+                    <span class="book-category">CHILDREN</span>
+                    <h3>The Little Prince</h3>
+                    <p class="book-author"> Antoine de Saint-Exupéry</p>
+                        <p class="book-description">
+                            A poetic tale about friendship, love and the thingsthat become meaningful when we truly see them.
+                        </p>
+                    <div class="book-meta">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.3</span>
+                        </div>
+                        <span class="detail-divider"></span>
+                        <strong class="book-price">$10.00</strong>
+                        <button class="cart-btns" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article
+                    class="book-row"
+                    data-title="Crime and Punishment"
+                    data-author="dostoevsky"
+                    data-category="classic fiction psychology"
+                    data-price="24.90"
+                    data-rating="4.7">
+                <div class="book-visual">
+                <a href="book-detail.html" class="book-object">
+                    <div class="gold-book-frame">
+                        <span class="frame-shine"></span>
+                        <img src="pic/crime-and-punishment-26427-1000x1500-webp.webp" alt="pic">
+                    </div>
+                </a>
+                    <button class="wishlist-btn" type="button"
+                            aria-label="Add Crime and Punishment to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="book-details">
+                    <span class="book-category">CLASSIC</span>
+                    <h3>Crime and Punishment</h3>
+                    <p class="book-author">Fyodor Dostoevsky</p>
+                    <p class="book-description">
+                        A psychologically intense exploration of guilt, morality and the consequences of one terrible act.
+                    </p>
+                    <div class="book-meta">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.7</span>
+                        </div>
+                        <span class="detail-divider"></span>
+                        <strong class="book-price">$24.90</strong>
+                        <button class="cart-btns" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="empty-state" id="emptyState">
+                <i class="fa-regular fa-bookmark"></i>
+                <h3>No books found</h3>
+                <p>Try changing your search or filters</p>
+        </div>
+        <div class="pagination">
+                <button class="page-arrow" type="button">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="page active" type="button">
+                    01
+                </button>
+                <button class="page" type="button">
+                    02
+                </button>
+                <button class="page" type="button">
+                    03
+                </button>
+                <span>...</span>
+                <button class="page" type="button">
+                    08
+                </button>
+                <button class="page-arrow" type="button">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-main">
+          <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="pic/lastlogo.png" alt="logo">
+            <span>Shamama</span>
+          </div>
+          <p>A quite place for beautiful stories, thoughtful ideas and books worth remembering</p>
+          <div class="footer-socails">
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+          <a href="#">All Books</a>
+        </div>
+        <div class="footer-newssletter">
+         <span class="newssletter-label">STAY IN THR STORY</span>
+         <h3>Get bookish news <em>in your inbox</em></h3>
+         <p>New arrivals, specail offers and stories worth discovering</p>
+         <form class="newssletter-form">
+          <input type="email" placeholder="Your email address" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+         </form>
+        </div>
+        </div>
+      </footer>
 
 </body>
 </html>
