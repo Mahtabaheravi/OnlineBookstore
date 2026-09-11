@@ -60,8 +60,9 @@ a {
     align-items: center;
     min-height: 610px;
     padding: 55px 20px 70px;
+
 }
-.author-portrait {
+.author-portraits {
     position: relative;
     width: 370px;
     max-width: 100%;
