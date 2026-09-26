@@ -1,0 +1,130 @@
+[
+    {
+      "id": 1,
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "price": 12,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "price": 18,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 3,
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "price": 10,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "title": "The Razor's Edge",
+      "author": "W. Somerset Maugham",
+      "price": 14,
+      "image": "",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "title": "1984",
+      "author": "George Orwell",
+      "price": 13,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 6,
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "price": 16,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 7,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 14,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "title": "A Thousand Splendid Suns",
+      "author": "Khaled Hosseini",
+      "price": 15,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 9,
+      "title": "سمفونی مردگان",
+      "author": "عباس معروفی",
+      "price": 14,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 10,
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "price": 15,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 11,
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "price": 14,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 12,
+      "title": "The Notebook",
+      "author": "Nicholas Sparks",
+      "price": 13,
+      "image": "",
+      "rating": 4.6
+    },
+    {
+      "id": 13,
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "price": 13,
+      "image": "",
+      "rating": 4.7
+    },
+    {
+      "id": 14,
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "price": 20,
+      "image": "",
+      "rating": 4.9
+    },
+    {
+      "id": 15,
+      "title": "The Idiot",
+      "author": "Fyodor Dostoevsky",
+      "price": 17,
+      "image": "",
+      "rating": 4.8
+    },
+    {
+      "id": 16,
+      "title": "Demons",
+      "author": "Fyodor Dostoevsky",
+      "price": 18,
+      "image": "",
+      "rating": 4.8
+    }
+  ]
