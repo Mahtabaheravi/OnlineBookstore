@@ -1,31 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>Readowl — Your Personal Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shamama</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-
-
 <body>
+    <header class="navbar">
+        <div class="logo">
+       <img src="pic/lastlogo.png" alt="logo">
+       <span>Shamama</span>
+        </div>
+       <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+       </nav>
+       <div class="nav-action">
+         <button class="nav-icon search-btn" aria-label="Search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+         <a href="#" class="nav-icon" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="nav-count">0</span>
+         </a>
+         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-count">0</span>
+           </a>
+           <div class="account-dropdown">
+           <button class="account-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+            <i class="fa-solid fa-chevron-down account-arrow"></i>
+           </button>
+           <div class="account-menu">
+            <a href="#">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user-plus"></i>
+                Creat Account
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-box"></i>
+                My Order
+            </a>
+            <div class="account-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+           </div>
+           </div>
+       </div>
+    
+    </header>
 
+<main>
+<section class="contact-hero">
+    <div class="hero-orbit hero-orbit-one"></div>
+    <div class="hero-orbit hero-orbit-two"></div>
+    <div class="contact-hero-content">
+        <div class="contact-hero-topline">
+            <span class="contact-eyebrow">SHAMAMA CUSTOMER DESK</span>
+            <span class="hero-index">01 / CONTACT</span>
+        </div>
+        <h1>How can we <em>help?</em></h1>
+        <p>
+            Whether you are looking for a book, checking an order,
+            or simply have a question, choose what you need below.
+            We will take you to the right place.
+        </p>
+        <a href="#contact-form" class="hero-contact-button">
+            <span>Start a conversation</span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </div>
+    <div class="contact-hero-visual">
+        <span class="hero-question-mark">?</span>
+        <div class="contact-book-card">
+            <div class="book-card-top">
+                <span>SHAMAMA</span>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="book-card-middle">
+                <span class="book-card-small">A NOTE FROM US</span>
+                <h2>Every question <em>has a place.</em></h2>
+            </div>
+            <div class="book-card-bottom">
+                <span>CUSTOMER SUPPORT</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="hero-floating-note note-one">
+            <i class="fa-regular fa-comment"></i>
+            <span>LET'S TALK</span>
+        </div>
+        <div class="hero-floating-note note-two">
+            <span>SHM</span>
+        </div>
+    </div>
+</section>
 
+<section class="contact-reasons">
+    <div class="section-intro">
+        <div class="section-number">01</div>
+        <div>
+            <span class="section-label">START HERE</span>
+            <h2>What do you <em>need?</em></h2>
+        </div>
+    </div>
+    <div class="reason-grid">
+        <a href="#contact-form" class="reason-card">
+            <div class="reason-card-top">
+                <span class="reason-number">01</span>
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="reason-card-content">
+                <h3>Find a book</h3>
+                <p>Tell us what kind of book you are looking for and we can help you find the right one.</p>
+            </div>
+            <span class="reason-action">Book recommendations <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#contact-form" class="reason-card">
+            <div class="reason-card-top">
+                <span class="reason-number">02</span>
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div class="reason-card-content">
+                <h3>My order</h3>
+                <p>Ask about an order, delivery, return, payment or a missing book.</p>
+            </div>
+            <span class="reason-action">Order support <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#contact-form" class="reason-card">
+            <div class="reason-card-top">
+                <span class="reason-number">03</span>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="reason-card-content">
+                <h3>Account & payment</h3>
+                <p>Need help with your account, payment, wishlist or another account issue?</p>
+            </div>
+            <span class="reason-action">Account support <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#contact-form" class="reason-card">
+            <div class="reason-card-top">
+                <span class="reason-number">04</span>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="reason-card-content">
+                <h3>Something else</h3>
+                <p>Have a suggestion, question or simply want to say hello? Write to us.</p>
+            </div>
+            <span class="reason-action">Send a message <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+    </div>
+</section>
+<section class="contact-workspace" id="contact-form">
+    <aside class="contact-sidebar">
+        <span class="section-label">02 — CONTACT DESK</span>
+        <h2>Tell us what <em>happened.</em></h2>
+        <p class="sidebar-intro">The more details you give us, the easier it is to give you a useful answer.</p>
+        <div class="sidebar-box">
+            <div class="sidebar-box-title">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>IF THIS IS ABOUT AN ORDER</span>
+            </div>
+            <p>Please include your order number, the book title and what went wrong.</p>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>Order number</li>
+                <li><i class="fa-solid fa-check"></i>Book title</li>
+                <li><i class="fa-solid fa-check"></i>Your question</li>
+            </ul>
+        </div>
+        <div class="sidebar-box recommendation-box">
+            <div class="sidebar-box-title">
+                <i class="fa-solid fa-book-open"></i>
+                <span>LOOKING FOR A BOOK?</span>
+            </div>
+            <p>Tell us a little about what you like. For example: genre, author, mood or a similar book.</p>
+        </div>
+        <div class="response-time">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+                <strong>RESPONSE</strong>
+                <span>We will get back to you as soon as possible.</span>
+            </div>
+        </div>
+    </aside>
+
+    <div class="contact-form-area">
+        <div class="form-heading">
+            <span>YOUR MESSAGE</span>
+            <h2>Send us a note.</h2>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="contact-name">YOUR NAME</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-email">EMAIL ADDRESS</label>
+                    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="contact-subject">WHAT IS THIS ABOUT?</label>
+                <div class="select-wrapper">
+                    <select id="contact-subject" name="subject" required>
+                        <option value="" selected disabled>Select a reason</option>
+                        <option value="book">I need help finding a book</option>
+                        <option value="order">I have a question about my order</option>
+                        <option value="delivery">Delivery question</option>
+                        <option value="return">Return or exchange</option>
+                        <option value="payment">Payment problem</option>
+                        <option value="account">Account problem</option>
+                        <option value="suggestion">Suggestion or feedback</option>
+                        <option value="other">Something else</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="order-number">ORDER NUMBER <small>optional — only if your message is about an order</small></label>
+                <input type="text" id="order-number" name="order-number" placeholder="e.g. SHM-1024">
+            </div>
+            <div class="form-field">
+                <label for="contact-message">YOUR MESSAGE</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us what you need help with..." required></textarea>
+            </div>
+            <div class="form-note">
+                <i class="fa-solid fa-paperclip"></i>
+                <span>If there is something important we need to know, mention it in your message.</span>
+            </div>
+            <div class="form-submit">
+                <p>By sending this message, you agree to be contacted about your request.</p>
+                <button type="submit">Send message <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="direct-contact">
+    <div class="direct-contact-heading">
+        <span class="section-label">02 — DIRECT CONTACT</span>
+        <h2>Prefer to reach us <em>directly?</em></h2>
+    </div>
+    <div class="direct-contact-grid">
+        <a href="tel:+930000000000" class="direct-contact-item">
+            <div class="direct-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+                <span>PHONE</span>
+                <h3>+93 000 000 0000</h3>
+                <p>For direct customer support.</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square direct-arrow"></i>
+        </a>
+        <div class="direct-contact-item">
+            <div class="direct-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+                <span>HOURS</span>
+                <h3>Sat — Thu</h3>
+                <p>9:00 AM — 6:00 PM</p>
+            </div>
+            <i class="fa-regular fa-calendar direct-arrow"></i>
+        </div>
+        <div class="direct-contact-item">
+            <div class="direct-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+                <span>LOCATION</span>
+                <h3>Kabul</h3>
+                <p>Afghanistan</p>
+            </div>
+            <i class="fa-solid fa-location-arrow direct-arrow"></i>
+        </div>
+    </div>
+</section>
+
+<section class="contact-final">
+    <div>
+        <span>STILL LOOKING?</span>
+        <h2>Maybe your next book is waiting.</h2>
+    </div>
+    <a href="shop.html">Browse the shop <i class="fa-solid fa-arrow-right"></i></a>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="pic/lastlogo.png" alt="logo">
+        <span>Shamama</span>
+      </div>
+      <p>A quite place for beautiful stories, thoughtful ideas and books worth remembering</p>
+      <div class="footer-socails">
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+  
+    </div>
+    <div class="footer-column">
+      <h3>Shop</h3>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+    </div>
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+    </div>
+    <div class="footer-column">
+      <h3>Customer Care</h3>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+      <a href="#">All Books</a>
+    </div>
+    <div class="footer-newssletter">
+     <span class="newssletter-label">STAY IN THR STORY</span>
+     <h3>Get bookish news <em>in your inbox</em></h3>
+     <p>New arrivals, specail offers and stories worth discovering</p>
+     <form class="newssletter-form">
+      <input type="email" placeholder="Your email address" aria-label="Email address">
+      <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+     </form>
+    </div>
+    </div>
+  </footer>
 </body>
 </html>
