@@ -332,7 +332,7 @@ button {
     position: relative;
     z-index: 2;
     color: var(--text);
-    font-size: 17px;
+    font-size: 10px;
     transition: transform 0.3s ease;
 }
 .shop-btn:hover span {
@@ -1012,7 +1012,7 @@ button {
     right: 16px;
     bottom: 15px;
     z-index: 3;
-    font-size: 15px;
+    font-size: 10px;
     color: var(--gold-dark);
     transition: transform 0.3s ease;
 }
@@ -1213,6 +1213,7 @@ button {
     display: flex;
     gap: 15px;
     transition: transform 0.6s ease;
+    will-change: transform;
 }
 .discount-card{
     position: relative;
