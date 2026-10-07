@@ -7,8 +7,8 @@
     --gold-dark: #8c6d3d;
     --gold-light: #d9c49a;
     --line: #ddd3c4;
-    --error: #a45d52;
-    --success: #718263;
+    --error: #ff2200;
+    --success: #73ff00;
 }
 .register-page {
     min-height: calc(100vh - 80px);
@@ -339,10 +339,10 @@
 
 .field small {
     display: block;
-    min-height: 10px;
+    min-height: 15px;
     margin-top: 4px;
     color: var(--error);
-    font-size: 7px;
+    font-size: 12px;
 }
 .form-row {
     display: grid;
@@ -453,10 +453,10 @@
     border-color: var(--gold);
 }
 .form-message {
-    min-height: 12px;
+    min-height: 15px;
     margin-top: 8px;
     text-align: center;
-    font-size: 7px;
+    font-size: 12px;
 }
 .form-message.error {
     color: var(--error);
