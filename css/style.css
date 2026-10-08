@@ -469,28 +469,7 @@ button {
     z-index: -1;
     box-shadow: 2px 2px 4px rgba(60,45,25,0.12);
 }
-.statu{
-    position: absolute;
-    right: 30px;
-    bottom: 8px;
-    width: 75px;
-    height: 100px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 5;
-    pointer-events: none;
-}
-.statu img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: bottom center;
-    display: block;
-    filter: drop-shadow(4px 7px 5px rgba(50, 40, 25, 0.20));
-    transition: transform 0.4s ease , filter 0.4s ease;
 
-}
 
 .book:hover {
     transform: translateY(-11px) rotateZ(-1deg);
@@ -1502,26 +1481,970 @@ button {
     font-size: 9px;
 }
 
+.menu-toggle {
+    display: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #ded7ca;
+    border-radius: 5px;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.menu-toggle span {
+    width: 19px;
+    height: 2px;
+    background: #292722;
+    transition: 0.3s ease;
+}
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    width: 50%;
+    background: #f8f5ef;
+    border-top: 1px solid #ded7ca;
+    box-shadow: 0 15px 30px rgba(50, 40, 25, 0.12);
+    z-index: 999;
+    padding: 15px 20px;
+}
+.mobile-menu.open {
+    display: block;
+}
+.mobile-navigation {
+    display: flex;
+    flex-direction: column;
+}
+.mobile-navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 5px;
+    border-bottom: 1px solid #ded7ca;
+    color: #292722;
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+.mobile-navigation a:hover {
+    color: #8d703f;
+    padding-left: 12px;
+}
 
 
+/*RESPONSIVE */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 25px;
+    }
+    .navigation {
+        gap: 25px;
+        margin-left: 30px;
+    }
+    .nav-action {
+        gap: 10px;
+    }
+    .hero {
+        grid-template-columns: 42% 58%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .hero-content {
+        padding-left: 0;
+        padding-right: 25px;
+    }
+    .hero h1 {
+        font-size: clamp(40px, 4.5vw, 56px);
+    }
+    .library {
+        padding-left: 10px;
+    }
+    .books {
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .book {
+        width: 72px;
+    }
+    .book-cover {
+        width: 65px;
+    }
+    .statu {
+        right: 15px;
+    }
+    .features-bar {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 30px 30px;
+    }
+    .feature-item {
+        gap: 10px;
+    }
+    .feature-divider {
+        margin: 0 12px;
+    }
+    .shop-grid-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .shop-grid {
+        gap: 35px 20px;
+    }
+    .authors-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .author-cards {
+        gap: 15px;
+    }
+    .author-portrait {
+        height: 220px;
+    }
+    .genres-section {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    }
+    .discount-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .discount-warpper {
+        grid-template-columns: 30% 70%;
+    }
+    .footer-main {
+        padding: 50px 30px 40px;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr 1.2fr;
+        gap: 28px;
+    }
+    .footer-brand {
+        padding-right: 5px;
+    }
+    .footer-newssletter {
+        padding-left: 0;
+    }
+}
+@media (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+    .navbar {
+        height: 70px;
+        padding: 0 24px;
+    }
+    .logo {
+        flex-shrink: 0;
+    }
+    .nav-action {
+        gap: 6px;
+    }
+    .nav-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .account-btn {
+        padding: 8px 10px;
+    }
+    .menu-toggle {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-left: 3px;
+        border: 1px solid rgba(180, 147, 91, 0.45);
+        border-radius: 50%;
+        background: rgba(253, 251, 247, 0.8);
+        box-shadow: 0 4px 12px rgba(90, 70, 40, 0.08);
+        transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;}
+    .menu-toggle:hover {
+        background: #f4ead9;
+        border-color: var(--gold);
+        transform: translateY(-1px);
+    }
+    .menu-toggle span {
+        width: 17px;
+        height: 1.5px;
+        border-radius: 10px;
+        background: var(--gold-dark);
+    }
+    .menu-toggle.active {
+        background: var(--gold-dark);
+        border-color: var(--gold-dark);
+    }
+    .menu-toggle.active span {
+        background: var(--cream-light);
+    }
+    .mobile-menu {
+        display: block;
+        top: 70px;
+        padding: 12px 24px 22px;
+        background: linear-gradient(135deg, rgba(253, 251, 247, 0.98), rgba(248, 245, 239, 0.98));
+        border-top: 1px solid rgba(180, 147, 91, 0.20);
+        box-shadow: 0 18px 35px rgba(50, 40, 25, 0.13);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+    .mobile-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .mobile-navigation {
+        gap: 2px;
+    }
+    .mobile-navigation a {
+        position: relative;
+        min-height: 52px;
+        padding: 13px 8px;
+        border-bottom: 1px solid rgba(180, 147, 91, 0.16);
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.25s ease, padding-left 0.25s ease, background 0.25s ease;
+    }
+    .mobile-navigation a:last-child {
+        border-bottom: none;
+    }
+    .mobile-navigation a::after {
+        content: "\f061";
+        position: absolute;
+        right: 8px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: var(--gold);
+        font-size: 9px;
+        opacity: 0;
+        transform: translateX(-5px);
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease;
+    }
+    .mobile-navigation a:hover {
+        color: var(--gold-dark);
+        padding-left: 14px;
+        background: rgba(216, 196, 154, 0.12);
+    }
+    .mobile-navigation a:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 65px 6% 55px;
+    }
+    .hero-content {
+        padding: 0;
+        text-align: center;
+    }
+    .small-label {
+        justify-content: center;
+    }
+    .hero h1 {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(44px, 7vw, 60px);
+    }
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-btn {
+        justify-content: center;
+    }
+    .library {
+        width: 100%;
+        padding: 45px 10px 25px;
+        margin-top: 15px;
+        border: none;
+    }
+    .library-header {
+        padding: 0 20px 18px;
+    }
+    .library-header span {
+        font-size: 18px;
+    }
+    .shelf-section {
+        width: 100%;
+    }
+    .shelf-title {
+        padding: 0 20px;
+        margin-bottom: 5px;
+    }
+    .books {
+        height: 145px;
+        width: 100%;
+        gap: 24px;
+        padding: 20px 35px 10px;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    .book {
+        width: 72px;
+        height: 120px;
+    }
+    .book-cover {
+        width: 64px;
+        height: 108px;
+    }
+    .book::before {
+        height: 103px;
+    }
+    .book::after {
+        height: 102px;
+    }
+    .statu {
+        right: 18px;
+        width: 62px;
+        height: 88px;
+    }
+    .wood-shelf {
+        margin: 0 20px;
+    }
+    .features-bar {
+        margin: 20px 25px;
+        padding: 25px 28px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 20px;
+    }
+    .feature-divider {
+        display: none;
+    }
+    .shop-grid-section {
+        margin: 65px auto;
+        padding: 0 30px;
+    }
+    .section-header {
+        margin-bottom: 30px;
+    }
+    .section-header h2 {
+        font-size: 34px;
+    }
+    .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 45px 30px;
+    }
+    .shop-card-cover {
+        max-width: 190px;
+    }
+    .shop-card-info {
+        max-width: 190px;
+    }
+    .authors-section {
+        margin: 65px auto;
+        padding: 0 30px;
+    }
+    .author-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .author-portrait {
+        height: 250px;
+    }
+    .genres-section {
+        margin: 75px auto;
+        padding: 0 30px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .genres-image {
+        min-height: 350px;
+        height: 350px;
+    }
+    .discount-section {
+        margin: 65px auto;
+        padding: 0 25px;
+    }
+    .discount-warpper {
+        grid-template-columns: 1fr;
+    }
+    .discount-intro {
+        padding: 35px 35px 25px;
+    }
+    .discount-intro p {
+        max-width: 420px;
+    }
+    .discount-slider {
+        padding: 10px 25px 25px;
+    }
+    .site-footer {
+        margin-top: 75px;
+    }
+    .footer-main {
+        padding: 42px 35px 35px;
+        grid-template-columns: 1.3fr 0.8fr 0.8fr 1.3fr;
+        gap: 25px;
+        align-items: start;
+    }
+    .footer-brand {
+        padding-right: 0;
+    }
+    .footer-brand p {
+        max-width: 210px;
+        margin-top: 12px;
+    }
+    .footer-socails {
+        margin-top: 17px;
+    }
+    .footer-column h3 {
+        margin: 5px 0 16px;
+        font-size: 13px;
+    }
+    .footer-column a {
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    .footer-newssletter {
+        padding-left: 0;
+    }
+    .footer-newssletter h3 {
+        margin-top: 8px;
+        font-size: 18px;
+    }
+    .footer-newssletter p {
+        margin-top: 8px;
+        max-width: 210px;
+    }
+    .newssletter-form {
+        margin-top: 14px;
+        max-width: 210px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        height: 65px;
+        padding: 0 18px;
+    }
+    .mobile-menu {
+        top: 65px;
+    }
+    .nav-action {
+        gap: 3px;
+    }
+.account-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(180, 147, 91, 0.35);
+    border-radius: 50%;
+    background: rgba(253, 251, 247, 0.75);
+    color: var(--gold-dark);
+    font-size: 14px;
+}
+.account-btn span {
+    display: none;
+}
+.account-btn .account-arrow {
+    display: none;
+}
+.account-dropdown {
+    position: relative;
+}
+.account-menu {
+    top: calc(100% + 10px);
+    right: 0;
+    width: 175px;
+    padding: 7px;
+    border: 1px solid rgba(180, 147, 91, 0.20);
+    border-radius: 9px;
+    background: var(--cream-light);
+    box-shadow: 0 15px 35px rgba(60, 45, 25, 0.16);
+}
+.account-dropdown:hover .account-menu {
+    transform: translateY(0);
+}
+    .nav-icon {
+        width: 34px;
+        height: 34px;
+    }
+    .menu-toggle {
+        width: 37px;
+        height: 37px;
+        margin-left: 4px;
+    }
+    .hero {
+        padding: 48px 25px 40px;
+    }
+    .hero h1 {
+        font-size: clamp(38px, 9vw, 52px);
+        letter-spacing: -2px;
+    }
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    .hero-btn {
+        gap: 12px;
+    }
+    .library {
+        padding: 30px 0 20px;
+    }
+    .library-header {
+        padding: 0 20px 15px;
+    }
+    .books {
+        gap: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .book {
+        width: 65px;
+    }
+    .book-cover {
+        width: 58px;
+        height: 103px;
+    }
+    .book::before {
+        height: 98px;
+    }
+    .book::after {
+        height: 97px;
+    }
+    .statu {
+        width: 55px;
+        height: 78px;
+        right: 10px;
+        bottom: 7px;
+    }
+    .wood-shelf {
+        margin: 0 15px;
+    }
+    .features-bar {
+        margin: 20px 18px;
+        padding: 22px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .shop-grid-section {
+        padding: 0 20px;
+    }
+    .shop-grid {
+        gap: 40px 15px;
+    }
+    .shop-card-cover {
+        max-width: 155px;
+    }
+    .shop-card-info {
+        max-width: 155px;
+    }
+    .authors-section {
+        padding: 0 20px;
+    }
+    .author-cards {
+        gap: 15px;
+    }
+    .author-portrait {
+        height: 210px;
+    }
+    .genres-section {
+        padding: 0 20px;
+    }
+    .genres-image {
+        height: 330px;
+        min-height: 330px;
+    }
+    .genres-grid {
+         gap: 10px;
+    }
+    .discount-section {
+        padding: 0 18px;
+    }
+    .discount-intro {
+        padding: 30px 25px 20px;
+    }
+    .discount-slider {
+        padding: 8px 18px 22px;
+    }
+    .discount-card {
+        flex-basis: 145px;
+    }
+    .discount-cover {
+        height: 170px;
+    }
+    .footer-main {
+        padding: 38px 25px 30px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 25px;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .footer-newssletter {
+        grid-column: 1 / -1;
+        padding-left: 0;
+    }
+    .footer-brand p {
+        max-width: 320px;
+    }
+    .newssletter-form {
+        max-width: 300px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 12px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 45px;
+        height: 38px;
+    }
+    .nav-action {
+        gap: 1px;
+    }
+    .nav-icon {
+        width: 31px;
+        height: 31px;
+        font-size: 14px;
+    }
+    .nav-count {
+        top: -2px;
+        right: -2px;
+        min-width: 15px;
+        height: 15px;
+        font-size: 8px;
+    }
+    .menu-toggle {
+        width: 34px;
+        height: 34px;
+    }
+    .menu-toggle span {
+        width: 16px;
+    }
+    .mobile-menu {
+        padding: 8px 15px 15px;
+    }
+    .mobile-navigation a {
+        min-height: 49px;
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+    .hero {
+        padding: 42px 20px 35px;
+    }
+    .hero h1 {
+        font-size: 39px;
+        line-height: 1.02;
+    }
+    .hero-content p {
+        font-size: 12.5px;
+    }
+    .hero-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .shop-btn,
+    .browse-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .library {
+        padding: 25px 0 15px;
+    }
+    .library-header {
+        padding: 0 18px 14px;
+    }
+    .library-header span {
+        font-size: 16px;
+    }
+    .shelf-title {
+        padding: 0 18px;
+    }
+    .books {
+        height: 135px;
+        gap: 0;
+        padding: 16px 18px 8px;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .book {
+        width: 58px;
+        height: 112px;
+    }
+    .book-cover {
+        width: 51px;
+        height: 94px;
+    }
+    .book::before {
+        height: 90px;
+        width: 7px;
+    }
+    .book::after {
+        height: 89px;
+        width: 6px;
+    }
+    .wood-shelf {
+        height: 10px;
+        margin: 0 12px;
+    }
+    .statu {
+        width: 43px;
+        height: 65px;
+        right: 7px;
+        bottom: 5px;
+    }
+    .features-bar {
+        width: calc(100% - 30px);
+        margin: 18px auto;
+        padding: 20px 17px;
+        gap: 17px;
+    }
+    .feature-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        font-size: 17px;
+    }
+    .feature-text h4 {
+        font-size: 14px;
+    }
+    .feature-text p {
+        font-size: 11px;
+    }
+    .section-header {
+        margin-bottom: 27px;
+    }
+    .section-header h2,
+    .genres-heading h2 {
+        font-size: 30px;
+    }
+    .shop-grid-section {
+        margin: 60px auto;
+        padding: 0 15px;
+    }
+    .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 12px;
+    }
+    .shop-card-cover {
+        width: 100%;
+        max-width: 145px;
+    }
+    .shop-card-info {
+        max-width: 145px;
+    }
+    .shop-card-info h3 {
+        font-size: 14px;
+    }
+    .shop-card-info p {
+        font-size: 11px;
+    }
+    .price {
+        font-size: 13px;
+    }
+    .cart-btn {
+        width: 33px;
+        height: 33px;
+    }
+    .authors-section {
+        margin: 60px auto;
+        padding: 0 15px;
+    }
+    .author-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .author-card {
+        padding: 8px 8px 15px;
+    }
+    .author-portrait {
+        width: 90%;
+        height: 180px;
+        margin-bottom: 14px;
+    }
+    .author-info h3 {
+        font-size: 15px;
+    }
+    .author-info p {
+        font-size: 9px;
+    }
+    .author-info > span {
+        font-size: 10px;
+    }
+    .genres-section {
+        margin: 65px auto;
+        padding: 0 15px;
+        gap: 25px;
+    }
+    .genres-image {
+        height: 280px;
+        min-height: 280px;
+        border-radius: 14px;
+    }
+    .genres-image-text {
+        left: 20px;
+        bottom: 20px;
+    }
+    .genres-image-text h3 {
+        font-size: 25px;
+    }
+    .genres-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .genre-card {
+        min-height: 115px;
+        padding: 15px;
+    }
+    .genre-card h3 {
+        font-size: 17px;
+    }
+    .genre-image {
+        width: 70px;
+        height: 70px;
+    }
+    .discount-section {
+        margin: 60px auto;
+        padding: 0 15px;
+    }
+    .discount-intro {
+        padding: 28px 22px 20px;
+    }
+    .discount-intro h2 {
+        font-size: 32px;
+    }
+    .discount-slider {
+        padding: 5px 15px 20px;
+    }
+    .discount-slidertop {
+        padding: 8px 3px;
+    }
+    .discount-card {
+        flex-basis: 135px;
+    }
+    .discount-cover {
+        height: 160px;
+    }
+    .site-footer {
+        margin-top: 65px;
+    }
+    .footer-main {
+        padding: 35px 20px 28px;
+        grid-template-columns: 1fr 1fr;
+        gap: 27px 20px;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .footer-logo {
+        font-size: 21px;
+    }
+    .footer-logo img {
+        width: 60px;
+        height: 36px;
+    }
+    .footer-brand p {
+        font-size: 10px;
+        max-width: 290px;
+    }
+    .footer-column h3 {
+        font-size: 12px;
+        margin: 0 0 13px;
+    }
+    .footer-column a {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+    .footer-newssletter {
+        grid-column: 1 / -1;
+    }
+    .footer-newssletter h3 {
+        font-size: 19px;
+    }
+    .footer-newssletter p {
+        font-size: 9px;
+        max-width: 280px;
+    }
+    .newssletter-form {
+        max-width: 280px;
+        margin-top: 13px;
+    }
+}
+@media (max-width: 380px) {
+    .navbar {
+        padding: 0 9px;
+    }
+    .logo {
+        font-size: 18px;
+        gap: 2px;
+    }
+    .logo img {
+        width: 39px;
+        height: 34px;
+    }
+    .nav-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+    }
+    .menu-toggle {
+        width: 31px;
+        height: 31px;
+    }
+    .menu-toggle span {
+        width: 14px;
+    }
+    .hero h1 {
+        font-size: 34px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .books{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .book {
+        width: 53px;
+    }
+    .book-cover{
+        width: 47px;
+        height: 88px;
+    }
+    .statu{
+        width: 38px;
+        height: 58px;
+        right: 5px;
+    }
+    .shop-grid {
+        gap:
+            30px 8px;
+    }
+    .shop-card-cover {
+        max-width: 135px;
+    }
+    .shop-card-info {
+        max-width: 135px;
+    }
+    .author-portrait {
+        height: 160px;
+    }
+    .footer-main {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 24px 15px;
+    }
+}
