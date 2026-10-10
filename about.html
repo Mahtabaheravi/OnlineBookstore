@@ -22,7 +22,7 @@
         <a href="categories.html">Categories</a>
         <a href="shop.html">Shop</a>
         <a href="about.html" class="active">About</a>
-        <a href="">Contact</a>
+        <a href="contact.html">Contact</a>
        </nav>
        <div class="nav-action">
          <button class="nav-icon search-btn" aria-label="Search">
@@ -43,11 +43,11 @@
             <i class="fa-solid fa-chevron-down account-arrow"></i>
            </button>
            <div class="account-menu">
-            <a href="#">
+            <a href="login.html">
                 <i class="fa-solid fa-right-to-bracket"></i>
                 Login
             </a>
-            <a href="#">
+            <a href="register.html">
                 <i class="fa-solid fa-user-plus"></i>
                 Creat Account
             </a>
@@ -66,9 +66,23 @@
             </a>
            </div>
            </div>
+           <button class="menu-toggle" id="menuToggle" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
        </div>
     
     </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-navigation">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 <main>
     <section class="about-hero">
         <div class="hero-label">WELCOME TO SHAMAMA</div>
@@ -359,6 +373,6 @@
     </div>
     </div>
   </footer>
-
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>

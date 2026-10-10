@@ -309,3 +309,452 @@ select {
     font-size: 10px;
     padding: 0 3px;
 }
+
+
+
+@media (max-width: 1200px) {
+    .collection {
+        padding: 0 30px;
+    }
+
+    .collection-top h2 {
+        font-size: 32px;
+    }
+
+    .book-grid {
+        gap: 35px 20px;
+    }
+
+    .book-covers {
+        height: 300px;
+    }
+
+    .gold-frame {
+        width: 88%;
+        height: 93%;
+    }
+
+    .book-info h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .collection {
+        margin: 25px auto;
+        padding: 0 30px;
+    }
+
+    .collection-top {
+        margin-bottom: 25px;
+    }
+
+    .collection-top h2 {
+        font-size: 30px;
+    }
+
+    .collection-top p {
+        max-width: 210px;
+    }
+
+    .filter-bar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .filter-left {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .filter-title {
+        margin-right: 5px;
+    }
+
+    .sort-box {
+        align-self: flex-end;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 25px;
+    }
+
+    .book-covers {
+        height: 320px;
+    }
+
+    .book-info h3 {
+        font-size: 17px;
+    }
+
+    .book-info p {
+        font-size: 10px;
+    }
+
+    .genre {
+        font-size: 8px;
+    }
+
+    .book-footer strong {
+        font-size: 15px;
+    }
+
+    .pagination {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 767px) {
+    .collection {
+        margin: 25px auto;
+        padding: 0 20px;
+    }
+
+    .collection-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+
+    .collection-top h2 {
+        font-size: 29px;
+    }
+
+    .collection-top p {
+        max-width: 400px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .filter-bar {
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .filter-left {
+        gap: 5px;
+    }
+
+    .filter-title {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .filter-button {
+        padding: 8px 11px;
+        font-size: 9px;
+    }
+
+    .sort-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sort-box select {
+        min-width: 140px;
+    }
+
+    .book-grid {
+        gap: 35px 18px;
+    }
+
+    .book-covers {
+        height: 280px;
+        padding: 7px;
+    }
+
+    .book-tag {
+        left: 10px;
+        top: 10px;
+        padding: 5px 6px;
+        font-size: 7px;
+    }
+
+    .heart {
+        top: 10px;
+        right: 10px;
+        width: 29px;
+        height: 29px;
+        opacity: 1;
+    }
+
+    .book-info {
+        padding: 12px 2px 0;
+    }
+
+    .book-info h3 {
+        font-size: 16px;
+        min-height: 38px;
+    }
+
+    .book-footer {
+        gap: 5px;
+    }
+
+    .book-footer strong {
+        font-size: 14px;
+    }
+
+    .rating {
+        font-size: 8px;
+    }
+
+    .cart-button {
+        height: 35px;
+    }
+
+    .pagination {
+        margin-top: 45px;
+        padding-top: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .collection {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .collection-top {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .collection-top h2 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .collection-top p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .filter-bar {
+        padding: 12px 0;
+        margin-bottom: 25px;
+    }
+
+    .filter-left {
+        gap: 4px;
+    }
+
+    .filter-button {
+        padding: 7px 9px;
+        font-size: 9px;
+    }
+
+    .sort-box {
+        font-size: 9px;
+    }
+
+    .sort-box select {
+        min-width: 125px;
+        padding: 7px;
+        font-size: 9px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 12px;
+    }
+
+    .book-covers {
+        height: 235px;
+        padding: 6px;
+    }
+
+    .gold-frame {
+        width: 90%;
+        height: 93%;
+        padding: 2px;
+    }
+
+    .gold-frame::before {
+        inset: 2px;
+    }
+
+    .book-tag {
+        top: 7px;
+        left: 7px;
+        padding: 4px 5px;
+        font-size: 6px;
+        letter-spacing: 0.5px;
+    }
+
+    .heart {
+        top: 7px;
+        right: 7px;
+        width: 27px;
+        height: 27px;
+        font-size: 12px;
+    }
+
+    .book-info {
+        padding-top: 11px;
+    }
+
+    .genre {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .book-info h3 {
+        margin-top: 6px;
+        font-size: 14px;
+        min-height: 34px;
+    }
+
+    .book-info p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .book-footer {
+        margin-top: 9px;
+        padding-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .book-footer strong {
+        font-size: 13px;
+    }
+
+    .rating {
+        font-size: 8px;
+    }
+
+    .rating i {
+        font-size: 6px;
+    }
+
+    .cart-button {
+        height: 33px;
+        margin-top: 9px;
+        font-size: 9px;
+    }
+
+    .pagination {
+        gap: 5px;
+        margin-top: 38px;
+        padding-top: 20px;
+    }
+
+    .page-number,
+    .page-arrow {
+        width: 31px;
+        height: 31px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 380px) {
+    .collection {
+        padding: 0 12px;
+    }
+
+    .collection-top h2 {
+        font-size: 24px;
+    }
+
+    .collection-top p {
+        font-size: 9px;
+    }
+
+    .filter-title {
+        font-size: 7px;
+    }
+
+    .filter-button {
+        padding: 7px 6px;
+        font-size: 8px;
+    }
+
+    .sort-box {
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    .sort-box select {
+        min-width: 115px;
+        max-width: 150px;
+        padding: 7px 5px;
+        font-size: 8px;
+    }
+
+    .book-grid {
+        gap: 27px 9px;
+    }
+
+    .book-covers {
+        height: 205px;
+        padding: 5px;
+    }
+
+    .gold-frame {
+        width: 91%;
+        height: 92%;
+    }
+
+    .book-tag {
+        top: 5px;
+        left: 5px;
+        padding: 3px 4px;
+        font-size: 5px;
+    }
+
+    .heart {
+        top: 5px;
+        right: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .book-info h3 {
+        font-size: 13px;
+        min-height: 32px;
+    }
+
+    .book-info p {
+        font-size: 8px;
+    }
+
+    .book-footer strong {
+        font-size: 12px;
+    }
+
+    .rating {
+        font-size: 7px;
+    }
+
+    .cart-button {
+        height: 31px;
+        font-size: 8px;
+    }
+
+    .cart-button i {
+        margin-right: 4px;
+        font-size: 8px;
+    }
+
+    .pagination {
+        gap: 4px;
+    }
+
+    .page-number,
+    .page-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 8px;
+    }
+
+    .pagination span {
+        font-size: 9px;
+        padding: 0 1px;
+    }
+}

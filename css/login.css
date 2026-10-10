@@ -449,3 +449,551 @@
     font-size: 5.5px;
     letter-spacing: 1.7px;
 }
+
+
+
+@media (max-width: 1200px) {
+    .login-page {
+        padding: 45px 30px;
+    }
+
+    .login-card {
+        max-width: 100%;
+        grid-template-columns: 55% 45%;
+    }
+
+    .form-side {
+        padding: 55px 45px 35px;
+    }
+
+    .bookstore-side {
+        padding: 40px 25px;
+    }
+
+    .side-quote {
+        left: 25px;
+        right: 25px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .login-page {
+        min-height: calc(100vh - 70px);
+        padding: 45px 30px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 720px;
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .form-side {
+        padding: 50px 55px 35px;
+    }
+
+    .form-header h1 {
+        font-size: 38px;
+    }
+
+    .form-header p {
+        max-width: 420px;
+        font-size: 11px;
+    }
+
+    .login-form {
+        margin-top: 35px;
+    }
+
+    .field {
+        margin-bottom: 20px;
+    }
+
+    .field label {
+        font-size: 9px;
+    }
+
+    .input-line > i {
+        font-size: 12px;
+    }
+
+    .input-line input {
+        height: 48px;
+        font-size: 12px;
+    }
+
+    .login-options {
+        font-size: 10px;
+    }
+
+    .custom-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+
+    .login-button {
+        height: 48px;
+        font-size: 10px;
+    }
+
+    .register-link {
+        font-size: 10px;
+    }
+
+    .bookstore-side {
+        min-height: 440px;
+        padding: 35px 25px;
+        border-left: none;
+        border-top: 1px solid var(--line);
+    }
+
+    .bookstore-side::before {
+        width: 350px;
+        height: 350px;
+        top: 65px;
+    }
+
+    .brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand h2 {
+        font-size: 26px;
+    }
+
+    .brand span {
+        font-size: 7px;
+    }
+
+    .library-note {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+    .bookshelf {
+        top: 52%;
+        transform: translate(-50%, -25%);
+    }
+
+    .side-quote {
+        bottom: 65px;
+    }
+
+    .side-footer {
+        bottom: 22px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .login-page {
+        min-height: calc(100vh - 65px);
+        padding: 35px 20px;
+    }
+
+    .login-card {
+        max-width: 560px;
+    }
+
+    .form-side {
+        padding: 40px 35px 30px;
+    }
+
+    .form-eyebrow {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .form-header h1 {
+        margin-top: 12px;
+        font-size: 35px;
+        line-height: 1.1;
+    }
+
+    .form-header p {
+        margin-top: 12px;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .login-form {
+        margin-top: 30px;
+    }
+
+    .field {
+        margin-bottom: 18px;
+    }
+
+    .field label {
+        margin-bottom: 6px;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .input-line > i {
+        width: 24px;
+        font-size: 12px;
+    }
+
+    .input-line input {
+        height: 46px;
+        padding-right: 35px;
+        font-size: 12px;
+    }
+
+    .field small {
+        font-size: 11px;
+    }
+
+    .login-options {
+        gap: 12px;
+        font-size: 9px;
+    }
+
+    .remember-me {
+        gap: 6px;
+    }
+
+    .custom-checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .login-button {
+        height: 46px;
+        margin-top: 24px;
+        font-size: 10px;
+    }
+
+    .form-message {
+        font-size: 11px;
+    }
+
+    .register-link {
+        margin-top: 25px;
+        padding-top: 15px;
+        flex-wrap: wrap;
+        font-size: 9px;
+    }
+
+    .bookstore-side {
+        min-height: 410px;
+        padding: 30px 20px;
+    }
+
+    .bookstore-side::before {
+        width: 300px;
+        height: 300px;
+        top: 70px;
+    }
+
+    .bookstore-side::after {
+        top: 20px;
+        right: 22px;
+    }
+
+    .brand img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .brand h2 {
+        margin-top: 6px;
+        font-size: 24px;
+    }
+
+    .brand span {
+        font-size: 6px;
+        letter-spacing: 2.5px;
+    }
+
+    .brand-line {
+        margin-top: 13px;
+    }
+
+    .library-note {
+        max-width: 250px;
+        margin-top: 12px;
+        font-size: 11px;
+    }
+
+    .bookshelf {
+        top: 53%;
+        transform: translate(-50%, -20%) scale(.92);
+    }
+
+    .side-quote {
+        left: 20px;
+        right: 20px;
+        bottom: 57px;
+        gap: 7px;
+    }
+
+    .side-quote p {
+        max-width: 200px;
+        font-size: 10px;
+    }
+
+    .quote-line {
+        width: 18px;
+        flex-shrink: 0;
+    }
+
+    .side-footer {
+        left: 15px;
+        right: 15px;
+        bottom: 20px;
+        gap: 7px;
+        font-size: 5px;
+        letter-spacing: 1.2px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .login-page {
+        padding: 25px 15px;
+    }
+
+    .login-card {
+        width: 100%;
+    }
+
+    .form-side {
+        padding: 32px 22px 25px;
+    }
+
+    .form-header h1 {
+        font-size: 31px;
+        letter-spacing: -.5px;
+    }
+
+    .form-header p {
+        font-size: 10px;
+    }
+
+    .login-form {
+        margin-top: 27px;
+    }
+
+    .field {
+        margin-bottom: 17px;
+    }
+
+    .input-line input {
+        height: 44px;
+        font-size: 11px;
+    }
+
+    .login-options {
+        align-items: flex-start;
+        font-size: 8px;
+    }
+
+    .remember-me {
+        max-width: 60%;
+    }
+
+    .forgot-password {
+        text-align: right;
+    }
+
+    .login-button {
+        margin-top: 22px;
+    }
+
+    .register-link {
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    .bookstore-side {
+        min-height: 385px;
+        padding: 27px 15px;
+    }
+
+    .bookstore-side::before {
+        width: 260px;
+        height: 260px;
+        top: 75px;
+    }
+
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand h2 {
+        font-size: 22px;
+    }
+
+    .brand span {
+        font-size: 5.5px;
+        letter-spacing: 2px;
+    }
+
+    .library-note {
+        max-width: 220px;
+        font-size: 10px;
+    }
+
+    .bookshelf {
+        top: 53%;
+        transform: translate(-50%, -15%) scale(.82);
+    }
+
+    .side-quote {
+        bottom: 52px;
+        left: 12px;
+        right: 12px;
+    }
+
+    .side-quote p {
+        max-width: 190px;
+        font-size: 9px;
+    }
+
+    .quote-line {
+        width: 14px;
+    }
+
+    .side-footer {
+        bottom: 17px;
+        font-size: 4.5px;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .login-page {
+        padding: 20px 10px;
+    }
+
+    .form-side {
+        padding: 28px 17px 22px;
+    }
+
+    .form-eyebrow {
+        font-size: 7px;
+        letter-spacing: 1.7px;
+    }
+
+    .form-header h1 {
+        font-size: 28px;
+    }
+
+    .form-header p {
+        font-size: 9px;
+    }
+
+    .login-form {
+        margin-top: 23px;
+    }
+
+    .field label {
+        font-size: 7px;
+        letter-spacing: 1.2px;
+    }
+
+    .input-line > i {
+        width: 21px;
+        font-size: 11px;
+    }
+
+    .input-line input {
+        height: 42px;
+        padding-left: 3px;
+        padding-right: 30px;
+        font-size: 10px;
+    }
+
+    .field small {
+        font-size: 10px;
+    }
+
+    .login-options {
+        gap: 8px;
+        font-size: 7px;
+    }
+
+    .custom-checkbox {
+        width: 13px;
+        height: 13px;
+    }
+
+    .login-button {
+        height: 43px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .register-link {
+        font-size: 7px;
+        gap: 4px;
+    }
+
+    .bookstore-side {
+        min-height: 355px;
+        padding: 24px 10px;
+    }
+
+    .bookstore-side::before {
+        width: 225px;
+        height: 225px;
+        top: 78px;
+    }
+
+    .brand img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand h2 {
+        font-size: 20px;
+    }
+
+    .brand span {
+        font-size: 5px;
+        letter-spacing: 1.7px;
+    }
+
+    .library-note {
+        max-width: 190px;
+        font-size: 9px;
+    }
+
+    .bookshelf {
+        top: 53%;
+        transform: translate(-50%, -10%) scale(.72);
+    }
+
+    .side-quote {
+        bottom: 47px;
+        gap: 5px;
+    }
+
+    .side-quote p {
+        max-width: 175px;
+        font-size: 8px;
+    }
+
+    .quote-line {
+        width: 10px;
+    }
+
+    .side-footer {
+        left: 8px;
+        right: 8px;
+        bottom: 15px;
+        gap: 5px;
+        font-size: 4px;
+        letter-spacing: .7px;
+    }
+}

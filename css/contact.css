@@ -948,3 +948,839 @@
     transform: translateY(-2px);
 }
 
+
+@media (max-width: 1200px) {
+    .contact-hero {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(58px, 6.5vw, 85px);
+    }
+
+    .contact-hero-visual {
+        min-width: 0;
+    }
+
+    .hero-question-mark {
+        font-size: 320px;
+    }
+
+    .contact-book-card {
+        width: min(310px, 82%);
+        min-height: 370px;
+    }
+
+    .contact-reasons,
+    .direct-contact {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .reason-card {
+        padding: 23px 20px;
+    }
+
+    .contact-workspace {
+        width: calc(100% - 50px);
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .contact-sidebar {
+        padding: 45px 30px;
+    }
+
+    .contact-sidebar h2 {
+        font-size: 40px;
+    }
+
+    .contact-form-area {
+        padding: 45px 35px;
+    }
+
+    .direct-contact-item {
+        padding: 25px 22px;
+    }
+
+    .contact-final {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .contact-hero {
+        min-height: auto;
+        padding: 60px 6% 55px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-hero-content {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-hero-topline {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(55px, 9vw, 78px);
+        letter-spacing: -3px;
+    }
+
+    .contact-hero h1 em {
+        margin-left: 0;
+    }
+
+    .contact-hero h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-hero-content p {
+        margin: 45px auto 0;
+        max-width: 520px;
+    }
+
+    .hero-contact-button {
+        margin-top: 25px;
+    }
+
+    .contact-hero-visual {
+        min-height: 390px;
+        width: 100%;
+    }
+
+    .hero-question-mark {
+        right: 50%;
+        top: -25px;
+        font-size: 300px;
+        transform: translateX(50%);
+    }
+
+    .contact-book-card {
+        width: min(300px, 75%);
+        min-height: 350px;
+    }
+
+    .note-one {
+        left: 10%;
+        top: 10%;
+    }
+
+    .note-two {
+        right: 10%;
+        bottom: 8%;
+    }
+
+    .contact-reasons {
+        padding: 75px 5% 85px;
+    }
+
+    .section-intro {
+        margin-bottom: 35px;
+    }
+
+    .section-intro h2 {
+        font-size: clamp(38px, 6vw, 52px);
+    }
+
+    .reason-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reason-card {
+        min-height: 270px;
+        padding: 25px;
+        border-bottom: 1px solid var(--contact-border);
+    }
+
+    .reason-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .reason-card:nth-child(3),
+    .reason-card:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .contact-workspace {
+        margin: 35px auto 85px;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-sidebar {
+        padding: 40px 35px;
+        border-right: none;
+        border-bottom: 1px solid var(--contact-border);
+    }
+
+    .contact-sidebar h2 {
+        font-size: 42px;
+    }
+
+    .sidebar-intro {
+        max-width: 500px;
+    }
+
+    .contact-form-area {
+        padding: 40px 35px;
+    }
+
+    .direct-contact {
+        padding: 75px 5%;
+    }
+
+    .direct-contact-heading h2 {
+        font-size: clamp(40px, 6vw, 54px);
+    }
+
+    .direct-contact-grid {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .direct-contact-item {
+        min-height: 200px;
+        border-bottom: 1px solid var(--contact-border);
+    }
+
+    .direct-contact-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .direct-contact-item:last-child {
+        border-bottom: none;
+    }
+
+    .contact-final {
+        min-height: auto;
+        padding: 55px 6%;
+        gap: 25px;
+    }
+
+    .contact-final h2 {
+        font-size: clamp(35px, 5vw, 48px);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact-hero {
+        padding: 48px 25px 40px;
+        gap: 25px;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(44px, 9vw, 64px);
+        letter-spacing: -2px;
+    }
+
+    .contact-hero-content p {
+        margin-top: 42px;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .contact-hero-visual {
+        min-height: 350px;
+    }
+
+    .hero-question-mark {
+        font-size: 260px;
+    }
+
+    .contact-book-card {
+        width: min(270px, 76%);
+        min-height: 320px;
+        padding: 22px;
+    }
+
+    .book-card-middle h2 {
+        font-size: 34px;
+    }
+
+    .note-one {
+        left: 3%;
+        width: 95px;
+        height: 38px;
+        font-size: 6px;
+    }
+
+    .note-two {
+        right: 3%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-reasons {
+        padding: 60px 20px 65px;
+    }
+
+    .section-intro {
+        gap: 13px;
+        margin-bottom: 30px;
+    }
+
+    .section-number {
+        font-size: 17px;
+    }
+
+    .section-intro h2 {
+        margin-top: 8px;
+        font-size: clamp(34px, 7vw, 45px);
+    }
+
+    .reason-card {
+        min-height: 250px;
+        padding: 20px 16px;
+    }
+
+    .reason-card-content h3 {
+        font-size: 22px;
+    }
+
+    .reason-card-content p {
+        font-size: 10px;
+    }
+
+    .reason-action {
+        margin-top: 22px;
+        font-size: 8px;
+    }
+
+    .contact-workspace {
+        width: calc(100% - 36px);
+        margin: 30px auto 65px;
+    }
+
+    .contact-sidebar {
+        padding: 30px 25px;
+    }
+
+    .contact-sidebar h2 {
+        font-size: 36px;
+    }
+
+    .sidebar-box {
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+    .response-time {
+        margin-top: 28px;
+    }
+
+    .contact-form-area {
+        padding: 30px 25px;
+    }
+
+    .form-heading h2 {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        margin-top: 28px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-field {
+        margin-bottom: 18px;
+    }
+
+    .form-field label {
+        font-size: 8px;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+        font-size: 12px;
+    }
+
+    .form-note {
+        align-items: flex-start;
+        font-size: 9px;
+    }
+
+    .form-submit {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    .form-submit p {
+        max-width: 100%;
+        font-size: 8px;
+    }
+
+    .form-submit button {
+        width: 100%;
+    }
+
+    .direct-contact {
+        padding: 60px 20px;
+    }
+
+    .direct-contact-heading h2 {
+        font-size: clamp(35px, 7vw, 46px);
+    }
+
+    .direct-contact-grid {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .direct-contact-item {
+        padding: 22px 17px;
+        min-height: 190px;
+    }
+
+    .direct-contact-item h3 {
+        font-size: 16px;
+    }
+
+    .contact-final {
+        padding: 45px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .contact-final h2 {
+        font-size: clamp(34px, 7vw, 44px);
+    }
+
+    .contact-final > a {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contact-hero {
+        padding: 42px 20px 35px;
+    }
+
+    .contact-eyebrow {
+        gap: 8px;
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .hero-index {
+        font-size: 7px;
+    }
+
+    .contact-hero h1 {
+        margin-top: 28px;
+        font-size: clamp(39px, 10vw, 52px);
+        line-height: .98;
+    }
+
+    .contact-hero h1::after {
+        bottom: -16px;
+        width: 55px;
+    }
+
+    .contact-hero-content p {
+        margin-top: 38px;
+        font-size: 11px;
+    }
+
+    .hero-contact-button {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 15px;
+        gap: 15px;
+        font-size: 9px;
+    }
+
+    .contact-hero-visual {
+        min-height: 300px;
+    }
+
+    .hero-question-mark {
+        top: 0;
+        font-size: 220px;
+    }
+
+    .contact-book-card {
+        width: min(235px, 75%);
+        min-height: 280px;
+        padding: 18px;
+    }
+
+    .book-card-top span {
+        font-size: 10px;
+    }
+
+    .book-card-middle {
+        padding: 15px 3px;
+    }
+
+    .book-card-middle h2 {
+        margin-top: 17px;
+        font-size: 29px;
+    }
+
+    .book-card-bottom {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+    .note-one {
+        left: 0;
+        top: 9%;
+        width: 83px;
+        height: 34px;
+        gap: 6px;
+        letter-spacing: .7px;
+    }
+
+    .note-two {
+        right: 0;
+        bottom: 6%;
+        width: 39px;
+        height: 39px;
+        font-size: 11px;
+    }
+
+    .contact-reasons {
+        padding: 50px 15px 55px;
+    }
+
+    .section-intro {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .section-number {
+        font-size: 15px;
+    }
+
+    .section-intro h2 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .reason-card {
+        min-height: 230px;
+        padding: 17px 12px;
+    }
+
+    .reason-number {
+        font-size: 15px;
+    }
+
+    .reason-card-top > i {
+        font-size: 15px;
+    }
+
+    .reason-card-content h3 {
+        font-size: 19px;
+    }
+
+    .reason-card-content p {
+        margin-top: 9px;
+        font-size: 9px;
+        line-height: 1.8;
+    }
+
+    .reason-action {
+        margin-top: 18px;
+        font-size: 7px;
+    }
+
+    .contact-workspace {
+        width: calc(100% - 30px);
+        margin: 25px auto 55px;
+    }
+
+    .contact-sidebar {
+        padding: 25px 18px;
+    }
+
+    .contact-sidebar h2 {
+        font-size: 32px;
+    }
+
+    .sidebar-intro {
+        font-size: 10px;
+    }
+
+    .sidebar-box-title {
+        font-size: 8px;
+    }
+
+    .sidebar-box > p {
+        font-size: 9px;
+    }
+
+    .sidebar-box li {
+        font-size: 9px;
+    }
+
+    .response-time {
+        padding: 13px;
+        gap: 10px;
+    }
+
+    .contact-form-area {
+        padding: 25px 18px;
+    }
+
+    .form-heading > span {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .form-heading h2 {
+        margin-top: 10px;
+        font-size: 31px;
+    }
+
+    .contact-form {
+        margin-top: 23px;
+    }
+
+    .form-field input,
+    .form-field select {
+        height: 44px;
+        padding: 0 11px;
+    }
+
+    .form-field textarea {
+        min-height: 120px;
+        padding: 11px;
+    }
+
+    .form-note {
+        padding: 11px;
+        gap: 8px;
+        font-size: 8px;
+    }
+
+    .form-submit button {
+        min-width: 0;
+        height: 45px;
+        font-size: 9px;
+    }
+
+    .direct-contact {
+        padding: 50px 15px;
+    }
+
+    .direct-contact-heading h2 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .direct-contact-grid {
+        grid-template-columns: 1fr;
+        margin-top: 25px;
+    }
+
+    .direct-contact-item {
+        min-height: 170px;
+        padding: 22px 18px;
+        border-right: none;
+        border-bottom: 1px solid var(--contact-border);
+    }
+
+    .direct-contact-item:nth-child(2) {
+        border-bottom: 1px solid var(--contact-border);
+    }
+
+    .direct-contact-item:last-child {
+        border-bottom: none;
+    }
+
+    .direct-icon {
+        margin-bottom: 22px;
+    }
+
+    .direct-contact-item h3 {
+        font-size: 17px;
+    }
+
+    .contact-final {
+        padding: 38px 20px;
+        gap: 22px;
+    }
+
+    .contact-final > div > span {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .contact-final h2 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .contact-final > a {
+        min-width: 0;
+        height: 45px;
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .contact-hero {
+        padding: 35px 15px 30px;
+    }
+
+    .contact-hero-topline {
+        gap: 10px;
+    }
+    .contact-eyebrow {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-hero h1 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+    .contact-hero-content p {
+        font-size: 10px;
+    }
+
+    .contact-hero-visual {
+        min-height: 265px;
+    }
+
+    .hero-question-mark {
+        font-size: 185px;
+    }
+
+    .contact-book-card {
+        width: 72%;
+        min-height: 250px;
+        padding: 15px;
+    }
+
+    .book-card-top {
+        padding-bottom: 10px;
+    }
+
+    .book-card-top span {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .book-card-middle h2 {
+        font-size: 25px;
+    }
+
+    .book-card-small {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+    .book-card-bottom {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+
+    .note-one {
+        width: 72px;
+        height: 30px;
+        font-size: 5px;
+    }
+
+    .note-two {
+        width: 34px;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .contact-reasons {
+        padding: 40px 12px 45px;
+    }
+
+    .section-intro h2 {
+        font-size: 28px;
+    }
+
+    .reason-card {
+        min-height: 220px;
+        padding: 14px 9px;
+    }
+
+    .reason-card-content h3 {
+        font-size: 17px;
+    }
+
+    .reason-card-content p {
+        font-size: 8px;
+    }
+
+    .reason-action {
+        gap: 5px;
+        font-size: 6px;
+    }
+
+    .contact-workspace {
+        width: calc(100% - 24px);
+        margin: 20px auto 45px;
+    }
+
+    .contact-sidebar {
+        padding: 22px 15px;
+    }
+
+    .contact-sidebar h2 {
+        font-size: 29px;
+    }
+
+    .contact-form-area {
+        padding: 22px 15px;
+    }
+
+    .form-heading h2 {
+        font-size: 28px;
+    }
+
+    .form-field label {
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+
+    .direct-contact {
+        padding: 40px 12px;
+    }
+
+    .direct-contact-heading h2 {
+        font-size: 28px;
+    }
+
+    .direct-contact-item {
+        min-height: 155px;
+        padding: 18px 14px;
+    }
+
+    .contact-final {
+        padding: 32px 15px;
+    }
+
+    .contact-final h2 {
+        font-size: 28px;
+    }
+}

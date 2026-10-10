@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Crime and Punishment - Shamama</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/book-detail.css">
 </head>
 
@@ -30,9 +25,10 @@
   </div>
  <nav class="navigation">
   <a href="index.html" class="active">Home</a>
-  <a href="">Categories</a>
-  <a href="">About</a>
-  <a href="">Contact</a>
+  <a href="categories.html">Categories</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
  </nav>
  <div class="nav-action">
    <button class="nav-icon search-btn" aria-label="Search">
@@ -53,11 +49,11 @@
       <i class="fa-solid fa-chevron-down account-arrow"></i>
      </button>
      <div class="account-menu">
-      <a href="#">
+      <a href="login.html">
           <i class="fa-solid fa-right-to-bracket"></i>
           Login
       </a>
-      <a href="#">
+      <a href="register.html">
           <i class="fa-solid fa-user-plus"></i>
           Creat Account
       </a>
@@ -76,9 +72,23 @@
       </a>
      </div>
      </div>
+     <button class="menu-toggle" id="menuToggle" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+  </button>
  </div>
 
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-navigation">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+</div>
 <main class="bd-main">
     <div class="bd-breadcrumb">
         <a href="index.html">Home</a>
@@ -275,14 +285,17 @@
           <form class="bd-review-form">
             <div class="bd-star-input">
               <span>Your Rating:</span>
-              <div class="bd-star-input-icons">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+          
+              <div class="bd-star-input-icons" role="group" aria-label="Choose your rating">
+                  <i class="fa-regular fa-star" data-rating="1" role="button" tabindex="0" aria-label="1 star"></i>
+                  <i class="fa-regular fa-star" data-rating="2" role="button" tabindex="0" aria-label="2 stars"></i>
+                  <i class="fa-regular fa-star" data-rating="3" role="button" tabindex="0" aria-label="3 stars"></i>
+                  <i class="fa-regular fa-star" data-rating="4" role="button" tabindex="0" aria-label="4 stars"></i>
+                  <i class="fa-regular fa-star" data-rating="5" role="button" tabindex="0" aria-label="5 stars"></i>
               </div>
-            </div>
+          
+              <span class="bd-selected-rating" aria-live="polite">Select a rating</span>
+          </div>
             <div class="bd-form-row">
               <input type="text" placeholder="Your Name" required>
               <input type="email" placeholder="Your Email" required>
@@ -471,5 +484,7 @@
   </div>
   </div>
 </footer>
+<script src="js/mobile-menu.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>

@@ -780,3 +780,1115 @@ img {
     background: var(--gold-dark);
     color: white;
 }
+
+
+
+@media (max-width: 1200px) {
+    .about-hero {
+        min-height: auto;
+        padding: 45px 5% 75px;
+    }
+    .store-window {
+        max-width: 900px;
+        min-height: 380px;
+        padding: 25px 25px 0;
+    }
+    .bookshelf {
+        height: 285px;
+        gap: 7px;
+        padding: 0 20px 5px;
+    }
+    .book {
+        width: 48px;
+    }
+    .book-1 {
+        height: 175px;
+    }
+    .book-2 {
+        height: 225px;
+    }
+    .book-3 {
+        height: 200px;
+    }
+    .book-4 {
+        height: 240px;
+    }
+    .book-5 {
+        height: 205px;
+    }
+    .book-6 {
+        height: 230px;
+    }
+    .book-7 {
+        height: 190px;
+    }
+    .book-8 {
+        height: 215px;
+    }
+    .statu {
+        right: 55px;
+        width: 60px;
+        height: 85px;
+    }
+    .intro-section {
+        padding: 120px 5%;
+    }
+    .intro-main {
+        gap: 65px;
+    }
+    .open-book-section {
+        padding: 100px 5% 120px;
+    }
+    .book-page {
+        padding: 55px 45px;
+    }
+    .page-number {
+        top: 45px;
+        right: 45px;
+    }
+    .page-footer {
+        left: 45px;
+        right: 45px;
+        bottom: 35px;
+    }
+    .culture-section {
+        padding: 120px 5%;
+        gap: 65px;
+    }
+    .culture-frame {
+        padding: 20px;
+    }
+    .culture-frame img {
+        height: 390px;
+    }
+    .paths-section {
+        padding: 120px 5%;
+    }
+    .path-card {
+        min-height: 320px;
+        padding: 25px;
+    }
+    .path-content h3 {
+        font-size: 37px;
+    }
+    .table-section {
+        padding: 110px 5%;
+    }
+    .reading-table {
+        min-height: 450px;
+        margin-top: 80px;
+    }
+    .table-book {
+        width: 155px;
+        height: 245px;
+    }
+    .table-book-one {
+        height: 220px;
+    }
+    .table-book-two {
+        height: 260px;
+    }
+    .table-book-three {
+        height: 225px;
+    }
+    .table-book-four {
+        height: 255px;
+    }
+    .behind-section {
+        padding: 120px 5%;
+        gap: 70px;
+    }
+    .final-section {
+        padding: 130px 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-hero {
+        padding: 45px 5% 65px;
+    }
+    .about-hero h1 {
+        font-size: clamp(48px, 8vw, 72px);
+    }
+    .store-window {
+        min-height: 340px;
+        padding: 22px 18px 0;
+    }
+    .bookshelf {
+        height: 250px;
+        gap: 10px;
+        padding: 0 10px 5px;
+    }
+    .book {
+        width: 42px;
+    }
+    .book-1 {
+        height: 150px;
+    }
+    .book-2 {
+        height: 195px;
+    }
+    .book-3 {
+        height: 175px;
+    }
+    .book-4 {
+        height: 210px;
+    }
+    .book-5 {
+        height: 180px;
+    }
+    .book-6 {
+        height: 200px;
+    }
+    .book-7 {
+        height: 165px;
+    }
+    .book-8 {
+        height: 190px;
+    }
+    .statu {
+        right: 35px;
+        width: 52px;
+        height: 75px;
+    }
+    .intro-section {
+        padding: 90px 5%;
+    }
+    .intro-main {
+        margin-top: 50px;
+        gap: 35px;
+    }
+    .intro-main h2 {
+        font-size: clamp(48px, 7vw, 70px);
+    }
+    .intro-big {
+        font-size: 23px;
+    }
+    .open-book-section {
+        padding: 85px 5% 100px;
+    }
+    .section-label {
+        margin-bottom: 40px;
+    }
+    .open-book {
+        grid-template-columns: 1fr 10px 1fr;
+        min-height: 460px;
+    }
+    .book-page {
+        padding: 45px 30px;
+    }
+    .book-page::after {
+        inset: 15px;
+    }
+    .page-number {
+        top: 35px;
+        right: 30px;
+        font-size: 15px;
+    }
+    .page-small {
+        margin-bottom: 22px;
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+    .book-page h2 {
+        font-size: clamp(35px, 5vw, 48px);
+    }
+    .page-line {
+        margin: 25px 0;
+    }
+    .book-page > p:not(.page-small) {
+        font-size: 11px;
+    }
+    .page-right > p:not(.page-small) {
+        margin-top: 65px;
+        font-size: 19px;
+    }
+    .page-word {
+        font-size: 55px;
+    }
+    .page-footer {
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+    .culture-section {
+        padding: 90px 5%;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 35px;
+    }
+    .culture-frame {
+        padding: 15px;
+    }
+    .culture-frame img {
+        height: 330px;
+    }
+    .culture-content h2 {
+        font-size: clamp(40px, 5.5vw, 55px);
+    }
+    .culture-lead {
+        font-size: 20px;
+    }
+    .paths-section {
+        padding: 90px 5%;
+    }
+    .paths-heading {
+        gap: 25px;
+        margin-bottom: 45px;
+    }
+    .paths-heading h2 {
+        font-size: clamp(40px, 5.5vw, 55px);
+    }
+    .paths-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+    .path-card {
+        min-height: 300px;
+        padding: 25px;
+    }
+    .path-content h3 {
+        font-size: 35px;
+    }
+    .table-section {
+        padding: 85px 5%;
+    }
+    .table-intro {
+        gap: 25px;
+    }
+    .table-intro h2 {
+        font-size: clamp(38px, 5.5vw, 55px);
+    }
+    .reading-table {
+        min-height: 390px;
+        margin-top: 65px;
+    }
+    .table-book {
+        width: 125px;
+        height: 210px;
+    }
+    .table-book-one {
+        height: 185px;
+    }
+    .table-book-two {
+        height: 225px;
+    }
+    .table-book-three {
+        height: 195px;
+    }
+    .table-book-four {
+        height: 220px;
+    }
+    .behind-section {
+        padding: 90px 5%;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 40px;
+    }
+    .behind-title h2 {
+        font-size: clamp(38px, 5.5vw, 55px);
+    }
+    .fact {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+        padding: 25px 0;
+    }
+    .final-section {
+        padding: 110px 5%;
+    }
+    .final-section h2 {
+        font-size: clamp(45px, 7vw, 70px);
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        padding: 40px 25px 55px;
+    }
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .about-hero h1 {
+        margin: 20px auto;
+        font-size: clamp(42px, 9vw, 60px);
+        line-height: 1.02;
+    }
+    .about-hero > p {
+        max-width: 500px;
+        font-size: 12px;
+    }
+    .hero-line {
+        width: min(210px, 80%);
+        margin: 28px auto 40px;
+    }
+    .store-window {
+        min-height: 280px;
+        padding: 18px 12px 0;
+    }
+    .window-top,
+    .window-bottom {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+    .bookshelf {
+        height: 210px;
+        gap: 7px;
+        padding: 0 5px 5px;
+        margin-top: 20px;
+    }
+    .book {
+        width: clamp(24px, 6vw, 38px);
+    }
+    .book-1 {
+        height: 125px;
+    }
+    .book-2 {
+        height: 165px;
+    }
+    .book-3 {
+        height: 145px;
+    }
+    .book-4 {
+        height: 180px;
+    }
+    .book-5 {
+        height: 150px;
+    }
+    .book-6 {
+        height: 170px;
+    }
+    .book-7 {
+        height: 135px;
+    }
+    .book-8 {
+        height: 160px;
+    }
+    .statu {
+        right: 20px;
+        width: 42px;
+        height: 60px;
+    }
+    .wood-shelf {
+        height: 12px;
+    }
+    .window-bottom {
+        padding-top: 10px;
+    }
+    .intro-section {
+        padding: 75px 25px;
+    }
+    .intro-top {
+        gap: 12px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .intro-top span {
+        font-size: 17px;
+    }
+    .intro-main {
+        margin-top: 35px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .intro-main h2 {
+        font-size: clamp(48px, 9vw, 65px);
+        line-height: 1;
+    }
+    .intro-text {
+        max-width: 600px;
+        padding-top: 0;
+    }
+    .gold-symbol {
+        margin-bottom: 18px;
+        font-size: 21px;
+    }
+    .intro-big {
+        margin-bottom: 18px;
+        font-size: 22px;
+    }
+    .intro-text > p:not(.intro-big) {
+        font-size: 12px;
+    }
+    .open-book-section {
+        padding: 70px 25px 80px;
+    }
+    .section-label {
+        margin-bottom: 35px;
+        gap: 12px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .section-label span {
+        font-size: 17px;
+    }
+    .open-book {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    .book-spine {
+        height: 10px;
+        background: linear-gradient(180deg, #c4b297, #e8dbc5 45%, #b6a387);
+    }
+    .book-page {
+        min-height: 370px;
+        padding: 45px 35px;
+    }
+    .book-page::after {
+        inset: 14px;
+    }
+    .page-number {
+        top: 30px;
+        right: 30px;
+        font-size: 15px;
+    }
+    .book-page h2 {
+        max-width: 400px;
+        font-size: clamp(40px, 8vw, 52px);
+    }
+    .page-line {
+        margin: 25px 0;
+    }
+    .page-right > p:not(.page-small) {
+        max-width: 350px;
+        margin-top: 45px;
+        font-size: 21px;
+    }
+    .page-word {
+        right: -25px;
+        bottom: 40px;
+        font-size: 55px;
+    }
+    .page-footer {
+        left: 30px;
+        right: 30px;
+        bottom: 25px;
+        font-size: 7px;
+    }
+    .culture-section {
+        padding: 75px 25px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .culture-frame {
+        width: min(100%, 400px);
+        padding: 18px;
+    }
+    .culture-frame img {
+        height: 360px;
+    }
+    .culture-content {
+        max-width: 600px;
+    }
+    .culture-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .culture-content h2 {
+        margin: 18px 0 22px;
+        font-size: clamp(42px, 8vw, 58px);
+    }
+    .culture-lead {
+        font-size: 21px;
+    }
+    .culture-content > p:not(.culture-lead) {
+        font-size: 12px;
+    }
+    .culture-line {
+        margin: 25px 0 15px;
+    }
+    .paths-section {
+        padding: 75px 25px;
+    }
+    .paths-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 35px;
+    }
+    .paths-heading > div > span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .paths-heading h2 {
+        margin-top: 15px;
+        font-size: clamp(40px, 8vw, 55px);
+    }
+    .paths-heading > p {
+        max-width: 500px;
+        font-size: 12px;
+    }
+    .paths-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .path-card {
+        min-height: 280px;
+        padding: 20px;
+    }
+    .path-card::before {
+        width: 150px;
+        height: 150px;
+        top: 75px;
+        right: -65px;
+    }
+    .path-icon {
+        top: 75px;
+        right: 30px;
+        font-size: 55px;
+    }
+    .path-content > span {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+    .path-content h3 {
+        font-size: clamp(26px, 5vw, 34px);
+    }
+    .path-content p {
+        font-size: 10px;
+    }
+    .path-arrow {
+        right: 20px;
+        bottom: 20px;
+        font-size: 15px;
+    }
+    .table-section {
+        padding: 70px 25px;
+    }
+    .table-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .table-intro > span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .table-intro h2 {
+        margin-left: 0;
+        font-size: clamp(40px, 8vw, 55px);
+    }
+    .table-intro p {
+        max-width: 400px;
+        font-size: 11px;
+    }
+    .reading-table {
+        min-height: 330px;
+        margin-top: 50px;
+        border-bottom-width: 10px;
+    }
+    .table-line {
+        bottom: 35px;
+    }
+    .table-book {
+        width: clamp(65px, 17vw, 110px);
+        height: 160px;
+        bottom: 35px;
+    }
+    .table-book-one {
+        left: 3%;
+        height: 140px;
+    }
+    .table-book-two {
+        left: 26%;
+        height: 175px;
+    }
+    .table-book-three {
+        right: 25%;
+        height: 150px;
+    }
+    .table-book-four {
+        right: 2%;
+        height: 170px;
+    }
+    .book-note {
+        width: 140px;
+        padding: 10px;
+    }
+    .book-note span {
+        font-size: 14px;
+    }
+    .book-note p {
+        font-size: 9px;
+    }
+    .behind-section {
+        padding: 75px 25px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .behind-title > span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .behind-title h2 {
+        margin-top: 15px;
+        font-size: clamp(42px, 8vw, 55px);
+    }
+    .fact {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        padding: 22px 0;
+    }
+    .fact h3 {
+        font-size: 19px;
+    }
+    .fact p {
+        font-size: 11px;
+    }
+    .final-section {
+        padding: 90px 25px;
+    }
+    .final-section::before,
+    .final-section::after {
+        width: 250px;
+        height: 250px;
+    }
+    .final-section::before {
+        left: -160px;
+    }
+    .final-section::after {
+        right: -160px;
+    }
+    .final-stars {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .final-section > span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .final-section h2 {
+        margin: 20px auto;
+        font-size: clamp(42px, 8vw, 60px);
+    }
+    .final-section > p {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+    .final-button {
+        margin-top: 28px;
+        padding: 14px 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 35px 18px 45px;
+    }
+    .about-hero h1 {
+        font-size: clamp(38px, 9vw, 50px);
+    }
+    .about-hero > p {
+        font-size: 11px;
+    }
+    .hero-line {
+        margin: 25px auto 32px;
+    }
+    .store-window {
+        min-height: 235px;
+        padding: 15px 8px 0;
+    }
+    .window-top,
+    .window-bottom {
+        font-size: 6px;
+        letter-spacing: 0.7px;
+    }
+    .bookshelf {
+        height: 175px;
+        gap: 5px;
+        padding: 0 3px 5px;
+        margin-top: 15px;
+    }
+    .book {
+        width: clamp(20px, 5.5vw, 32px);
+    }
+    .book-1 {
+        height: 105px;
+    }
+    .book-2 {
+        height: 135px;
+    }
+    .book-3 {
+        height: 120px;
+    }
+    .book-4 {
+        height: 150px;
+    }
+    .book-5 {
+        height: 125px;
+    }
+    .book-6 {
+        height: 140px;
+    }
+    .book-7 {
+        height: 112px;
+    }
+    .book-8 {
+        height: 132px;
+    }
+    .statu {
+        right: 12px;
+        width: 34px;
+        height: 48px;
+    }
+    .wood-shelf {
+        height: 10px;
+    }
+    .intro-section {
+        padding: 60px 20px;
+    }
+    .intro-top {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+    .intro-top span {
+        font-size: 15px;
+    }
+    .intro-main {
+        margin-top: 28px;
+        gap: 22px;
+    }
+    .intro-main h2 {
+        font-size: clamp(43px, 10vw, 55px);
+    }
+    .intro-big {
+        font-size: 20px;
+    }
+    .open-book-section {
+        padding: 60px 15px 70px;
+    }
+    .section-label {
+        gap: 8px;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+    .book-page {
+        min-height: 350px;
+        padding: 40px 25px;
+    }
+    .book-page::after {
+        inset: 10px;
+    }
+    .page-number {
+        top: 25px;
+        right: 23px;
+    }
+    .page-small {
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+    .book-page h2 {
+        font-size: clamp(36px, 9vw, 46px);
+    }
+    .book-page > p:not(.page-small) {
+        font-size: 11px;
+    }
+    .page-right > p:not(.page-small) {
+        margin-top: 35px;
+        font-size: 19px;
+    }
+    .page-word {
+        right: -35px;
+        bottom: 35px;
+        font-size: 45px;
+    }
+    .page-footer {
+        left: 23px;
+        right: 23px;
+        bottom: 22px;
+        font-size: 6px;
+        letter-spacing: 0.7px;
+    }
+    .culture-section {
+        padding: 60px 20px;
+        gap: 28px;
+    }
+    .culture-frame {
+        padding: 14px;
+    }
+    .culture-frame::before {
+        inset: 8px;
+    }
+    .culture-frame img {
+        height: 300px;
+    }
+    .culture-content h2 {
+        font-size: clamp(39px, 9vw, 50px);
+    }
+    .culture-lead {
+        font-size: 19px;
+    }
+    .paths-section {
+        padding: 60px 18px;
+    }
+    .paths-heading h2 {
+        font-size: clamp(36px, 9vw, 48px);
+    }
+    .paths-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .path-card {
+        min-height: 260px;
+        padding: 22px;
+    }
+    .path-icon {
+        top: 65px;
+        right: 35px;
+        font-size: 55px;
+    }
+    .path-content h3 {
+        font-size: 35px;
+    }
+    .path-content p {
+        max-width: 300px;
+        font-size: 11px;
+    }
+    .table-section {
+        padding: 60px 18px;
+    }
+    .table-intro h2 {
+        font-size: clamp(36px, 9vw, 48px);
+    }
+    .reading-table {
+        min-height: 280px;
+        margin-top: 40px;
+    }
+    .table-line {
+        bottom: 30px;
+    }
+    .table-book {
+        width: 22%;
+        height: 135px;
+        bottom: 30px;
+    }
+    .table-book-one {
+        left: 1%;
+        height: 115px;
+    }
+    .table-book-two {
+        left: 25%;
+        height: 145px;
+    }
+    .table-book-three {
+        right: 24%;
+        height: 125px;
+    }
+    .table-book-four {
+        right: 1%;
+        height: 140px;
+    }
+    .book-note {
+        width: 115px;
+        padding: 8px;
+    }
+    .book-note span {
+        font-size: 12px;
+    }
+    .book-note p {
+        font-size: 8px;
+    }
+    .behind-section {
+        padding: 60px 20px;
+        gap: 25px;
+    }
+    .behind-title h2 {
+        font-size: clamp(39px, 9vw, 50px);
+    }
+    .fact {
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    .fact > span {
+        font-size: 15px;
+    }
+    .fact h3 {
+        font-size: 17px;
+    }
+    .fact p {
+        font-size: 10px;
+    }
+    .final-section {
+        padding: 75px 18px;
+    }
+    .final-section h2 {
+        font-size: clamp(38px, 9vw, 52px);
+    }
+    .final-section > p {
+        font-size: 10px;
+    }
+    .final-button {
+        gap: 12px;
+        padding: 13px 17px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-hero {
+        padding: 30px 14px 40px;
+    }
+    .about-hero h1 {
+        font-size: 36px;
+    }
+    .hero-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+    .store-window {
+        padding: 12px 5px 0;
+    }
+    .window-top,
+    .window-bottom {
+        font-size: 5px;
+        letter-spacing: 0.4px;
+    }
+    .bookshelf {
+        height: 155px;
+        gap: 3px;
+        padding: 0 2px 5px;
+    }
+    .book {
+        width: 22px;
+    }
+    .book-1 {
+        height: 95px;
+    }
+    .book-2 {
+        height: 120px;
+    }
+    .book-3 {
+        height: 108px;
+    }
+    .book-4 {
+        height: 130px;
+    }
+    .book-5 {
+        height: 112px;
+    }
+    .book-6 {
+        height: 125px;
+    }
+    .book-7 {
+        height: 100px;
+    }
+    .book-8 {
+        height: 117px;
+    }
+    .statu {
+        right: 8px;
+        width: 28px;
+        height: 40px;
+    }
+    .intro-section {
+        padding: 50px 15px;
+    }
+    .intro-main h2 {
+        font-size: 42px;
+    }
+    .intro-big {
+        font-size: 18px;
+    }
+    .open-book-section {
+        padding: 50px 12px 60px;
+    }
+    .section-label {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+    .book-page {
+        min-height: 330px;
+        padding: 35px 20px;
+    }
+    .book-page h2 {
+        font-size: 34px;
+    }
+    .page-right > p:not(.page-small) {
+        font-size: 17px;
+    }
+    .page-footer {
+        left: 18px;
+        right: 18px;
+        font-size: 5px;
+    }
+    .culture-section {
+        padding: 50px 15px;
+    }
+    .culture-frame img {
+        height: 260px;
+    }
+    .culture-content h2 {
+        font-size: 37px;
+    }
+    .culture-lead {
+        font-size: 17px;
+    }
+    .paths-section {
+        padding: 50px 15px;
+    }
+    .paths-heading h2 {
+        font-size: 34px;
+    }
+    .path-card {
+        min-height: 240px;
+        padding: 18px;
+    }
+    .path-content h3 {
+        font-size: 32px;
+    }
+    .table-section {
+        padding: 50px 15px;
+    }
+    .table-intro h2 {
+        font-size: 34px;
+    }
+    .reading-table {
+        min-height: 245px;
+    }
+    .table-book {
+        width: 23%;
+        height: 115px;
+    }
+    .table-book-one {
+        height: 100px;
+    }
+    .table-book-two {
+        height: 125px;
+    }
+    .table-book-three {
+        height: 108px;
+    }
+    .table-book-four {
+        height: 120px;
+    }
+    .book-note {
+        width: 95px;
+        padding: 6px;
+    }
+    .book-note span {
+        font-size: 10px;
+    }
+    .book-note p {
+        font-size: 7px;
+    }
+    .behind-section {
+        padding: 50px 15px;
+    }
+    .behind-title h2 {
+        font-size: 36px;
+    }
+    .fact h3 {
+        font-size: 16px;
+    }
+    .final-section {
+        padding: 65px 15px;
+    }
+    .final-section h2 {
+        font-size: 36px;
+    }
+    .final-section > span {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+}

@@ -485,3 +485,596 @@
 .login-link a:hover i {
     transform: translateX(4px);
 }
+
+@media (max-width: 1200px) {
+    .register-page {
+        padding: 45px 4%;
+    }
+
+    .register-card {
+        width: 100%;
+        grid-template-columns: 40% 60%;
+    }
+
+    .bookstore-side {
+        padding: 38px 25px;
+    }
+
+    .form-side {
+        padding: 50px 45px 35px;
+    }
+
+    .form-header h1 {
+        font-size: 37px;
+    }
+
+    .form-row {
+        gap: 16px;
+    }
+
+    .bookshelf {
+        width: 215px;
+    }
+
+    .side-quote {
+        left: 25px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .register-page {
+        min-height: calc(100vh - 70px);
+        padding: 40px 5%;
+    }
+
+    .register-card {
+        max-width: 650px;
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .form-side {
+        order: 1;
+        padding: 45px 50px 35px;
+    }
+
+    .bookstore-side {
+        order: 2;
+        min-height: 330px;
+        padding: 30px 25px;
+        border-right: none;
+        border-top: 1px solid var(--line);
+    }
+
+    .bookstore-side::before {
+        width: 330px;
+        height: 330px;
+        top: 35px;
+    }
+
+    .brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand h2 {
+        font-size: 25px;
+    }
+
+    .brand-line {
+        margin-top: 12px;
+    }
+
+    .library-note {
+        margin-top: 10px;
+        max-width: 280px;
+    }
+
+    .bookshelf {
+        top: 58%;
+        width: 225px;
+        height: 185px;
+        transform: translate(-50%, -35%);
+    }
+
+    .side-quote,
+    .side-footer {
+        display: none;
+    }
+
+    .form-header h1 {
+        font-size: 36px;
+    }
+
+    .form-header p {
+        max-width: 100%;
+        font-size: 11px;
+    }
+
+    .form-eyebrow {
+        font-size: 8px;
+    }
+
+    .register-form {
+        margin-top: 28px;
+    }
+
+    .field label {
+        font-size: 8px;
+    }
+
+    .input-line input {
+        height: 43px;
+        font-size: 12px;
+    }
+
+    .input-line > i {
+        font-size: 12px;
+    }
+
+    .terms {
+        font-size: 9px;
+    }
+
+    .create-account {
+        height: 46px;
+        font-size: 10px;
+    }
+
+    .login-link {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 767px) {
+    .register-page {
+        padding: 30px 20px;
+    }
+
+    .register-card {
+        max-width: 560px;
+    }
+
+    .form-side {
+        padding: 35px 30px 28px;
+    }
+
+    .form-header h1 {
+        margin-top: 11px;
+        font-size: 33px;
+        line-height: 1.1;
+    }
+
+    .form-header p {
+        margin-top: 12px;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .register-form {
+        margin-top: 25px;
+    }
+
+    .field {
+        margin-bottom: 15px;
+    }
+
+    .field label {
+        margin-bottom: 6px;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .input-line > i {
+        width: 23px;
+        font-size: 11px;
+    }
+
+    .input-line input {
+        height: 42px;
+        padding-right: 32px;
+        font-size: 12px;
+    }
+
+    .field small {
+        font-size: 10px;
+    }
+
+    .password-strength {
+        margin-bottom: 17px;
+    }
+
+    .strength-info {
+        font-size: 8px;
+    }
+
+    .terms {
+        align-items: flex-start;
+        gap: 7px;
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .custom-checkbox {
+        width: 15px;
+        height: 15px;
+        margin-top: 1px;
+    }
+
+    .create-account {
+        margin-top: 20px;
+    }
+
+    .form-message {
+        font-size: 11px;
+    }
+
+    .login-link {
+        flex-wrap: wrap;
+        margin-top: 18px;
+        padding-top: 15px;
+        font-size: 9px;
+    }
+
+    .bookstore-side {
+        min-height: 300px;
+        padding: 25px 20px;
+    }
+
+    .bookstore-side::before {
+        width: 290px;
+        height: 290px;
+        top: 30px;
+    }
+
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand h2 {
+        font-size: 23px;
+    }
+
+    .brand span {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+    .library-note {
+        max-width: 240px;
+        font-size: 11px;
+    }
+
+    .bookshelf {
+        top: 61%;
+        width: 205px;
+        height: 170px;
+        transform: translate(-50%, -30%);
+    }
+
+    .books {
+        left: 12px;
+        right: 12px;
+        bottom: 28px;
+        height: 135px;
+        gap: 3px;
+    }
+
+    .book {
+        width: 27px;
+        font-size: 5px;
+    }
+
+    .book-2 {
+        width: 29px;
+    }
+
+    .book-4 {
+        width: 31px;
+    }
+
+    .book-6 {
+        width: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .register-page {
+        padding: 22px 15px;
+    }
+
+    .register-card {
+        border-radius: 3px;
+    }
+
+    .form-side {
+        padding: 30px 22px 25px;
+    }
+
+    .form-eyebrow {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .form-header h1 {
+        font-size: 30px;
+    }
+
+    .form-header p {
+        font-size: 10px;
+    }
+
+    .register-form {
+        margin-top: 23px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .field {
+        margin-bottom: 14px;
+    }
+
+    .field label {
+        font-size: 8px;
+    }
+
+    .input-line input {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .field small {
+        font-size: 10px;
+    }
+
+    .strength-info {
+        font-size: 7px;
+    }
+
+    .terms {
+        font-size: 8px;
+    }
+
+    .create-account {
+        height: 44px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .login-link {
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    .bookstore-side {
+        min-height: 275px;
+        padding: 22px 15px;
+    }
+
+    .bookstore-side::before {
+        width: 255px;
+        height: 255px;
+        top: 25px;
+    }
+
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand h2 {
+        margin-top: 5px;
+        font-size: 21px;
+    }
+
+    .brand span {
+        font-size: 5px;
+        letter-spacing: 1.8px;
+    }
+
+    .brand-line {
+        margin-top: 10px;
+    }
+
+    .library-note {
+        max-width: 220px;
+        margin-top: 8px;
+        font-size: 10px;
+    }
+
+    .bookshelf {
+        top: 63%;
+        width: 185px;
+        height: 155px;
+        transform: translate(-50%, -25%);
+    }
+
+    .books {
+        left: 10px;
+        right: 10px;
+        bottom: 25px;
+        height: 120px;
+        gap: 2px;
+    }
+
+    .book {
+        width: 24px;
+        font-size: 4px;
+    }
+
+    .book-1 {
+        height: 85px;
+    }
+
+    .book-2 {
+        width: 26px;
+        height: 105px;
+    }
+
+    .book-3 {
+        height: 94px;
+    }
+
+    .book-4 {
+        width: 28px;
+        height: 112px;
+    }
+
+    .book-5 {
+        height: 90px;
+    }
+
+    .book-6 {
+        width: 22px;
+        height: 76px;
+    }
+
+    .shelf-top {
+        bottom: 22px;
+    }
+
+    .shelf-bottom {
+        bottom: 6px;
+    }
+
+    .shelf-leg {
+        height: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .register-page {
+        padding: 15px 10px;
+    }
+
+    .form-side {
+        padding: 25px 17px 22px;
+    }
+
+    .form-header h1 {
+        font-size: 27px;
+    }
+
+    .form-header p {
+        font-size: 10px;
+    }
+
+    .form-eyebrow {
+        font-size: 6px;
+        letter-spacing: 1.7px;
+    }
+
+    .field label {
+        font-size: 7px;
+        letter-spacing: 1.3px;
+    }
+
+    .input-line input {
+        font-size: 11px;
+    }
+
+    .terms {
+        font-size: 7px;
+    }
+
+    .login-link {
+        font-size: 7px;
+    }
+
+    .bookstore-side {
+        min-height: 255px;
+        padding: 20px 12px;
+    }
+
+    .bookstore-side::before {
+        width: 225px;
+        height: 225px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand h2 {
+        font-size: 19px;
+    }
+
+    .brand span {
+        font-size: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .library-note {
+        max-width: 190px;
+        font-size: 9px;
+    }
+
+    .bookshelf {
+        top: 64%;
+        width: 170px;
+        height: 140px;
+    }
+
+    .books {
+        left: 8px;
+        right: 8px;
+        bottom: 22px;
+        height: 110px;
+        gap: 2px;
+    }
+
+    .book {
+        width: 22px;
+    }
+
+    .book-1 {
+        height: 75px;
+    }
+
+    .book-2 {
+        width: 23px;
+        height: 92px;
+    }
+
+    .book-3 {
+        height: 84px;
+    }
+
+    .book-4 {
+        width: 25px;
+        height: 100px;
+    }
+
+    .book-5 {
+        height: 80px;
+    }
+
+    .book-6 {
+        width: 20px;
+        height: 68px;
+    }
+
+    .shelf-top {
+        bottom: 19px;
+    }
+
+    .shelf-bottom {
+        bottom: 5px;
+    }
+
+    .shelf-leg {
+        height: 17px;
+        width: 5px;
+    }
+}
