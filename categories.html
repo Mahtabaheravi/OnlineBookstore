@@ -31,14 +31,15 @@
          <button class="nav-icon search-btn" aria-label="Search">
            <i class="fa-solid fa-magnifying-glass"></i>
          </button>
-         <a href="#" class="nav-icon" aria-label="Wishlist">
-          <i class="fa-regular fa-heart"></i>
-          <span class="nav-count">0</span>
-         </a>
-         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+         <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count wishlist-count">0</span>
+        </a>
+        
+        <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="nav-count">0</span>
-           </a>
+            <span class="nav-count cart-count">0</span>
+        </a>
            <div class="account-dropdown">
            <button class="account-btn">
             <i class="fa-regular fa-user"></i>
@@ -138,7 +139,7 @@
                 ♥
             </div>
         </a>
-        <a href="#" class="category-card mystery">
+        <a href="category-books.html" class="category-card mystery">
             <div class="card-top">
                 <span>Mystery</span>
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -153,7 +154,7 @@
             </div>
             <div class="category-decoration">?</div>
         </a>
-        <a href="#" class="category-card classics">
+        <a href="categories.html" class="category-card classics">
             <div class="card-top">
                 <span>Classics</span>
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -264,7 +265,7 @@
         </span>
         <h2>Classic<em>Never Fades.</em></h2>
         <p>Some stories become more beautiful with time. Discover the authors and books that shaped literature.</p>
-        <a href="#" class="classic-btn">
+        <a href="category-books.html" class="classic-btn">
             Explore Classics<i class="fa-solid fa-arrow-right"></i>
         </a>
     </div>
@@ -287,19 +288,19 @@
       <h2>Let your mood choose.</h2>
     </div>
     <div class="mood-list">
-        <a href="#">
+        <a href="category-books.html">
             <span><i class="fa-solid fa-heart"></i> want something romantic</span>
             <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <a href="#">
+        <a href="categories.html">
             <span><i class="fa-solid fa-moon"></i>I want something mysterious</span>
             <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <a href="#">
+        <a href="categories.html">
             <span><i class="fa-solid fa-brain"></i>I want to understand people</span>
             <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <a href="#">
+        <a href="categories.html">
             <span><i class="fa-solid fa-feather-pointed"></i>I want a timeless classic</span>
             <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -356,5 +357,7 @@
     </div>
   </footer>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/cart.js"></script>
+    <script src="js/favorite-button.js"></script>
 </body>
 </html>

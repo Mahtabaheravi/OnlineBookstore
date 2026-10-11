@@ -33,14 +33,15 @@
          <button class="nav-icon search-btn" aria-label="Search">
            <i class="fa-solid fa-magnifying-glass"></i>
          </button>
-         <a href="#" class="nav-icon" aria-label="Wishlist">
-          <i class="fa-regular fa-heart"></i>
-          <span class="nav-count">0</span>
-         </a>
-         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+         <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count wishlist-count">0</span>
+        </a>
+        
+        <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="nav-count">0</span>
-           </a>
+            <span class="nav-count cart-count">0</span>
+        </a>
            <div class="account-dropdown">
            <button class="account-btn">
             <i class="fa-regular fa-user"></i>
@@ -220,7 +221,7 @@
                             <img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="pic">
                     </div>
                 </a>
-                    <button class="wishlist-btn" type="button" aria-label="Add The Metamorphosis to wishlist">
+                    <button class="wishlist-btn favorite-btn" type="button" aria-label="Add The Metamorphosis to wishlist">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </div>
@@ -255,7 +256,7 @@
                             <img src="pic/33.jpg" alt="pic">
                         </div>
                     </a>
-                        <button class="wishlist-btn" type="button" aria-label="Add The Lord of the Rings to wishlist">
+                        <button class="wishlist-btn favorite-btn" type="button" aria-label="Add The Lord of the Rings to wishlist">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -291,7 +292,7 @@
                             <img src="pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg" alt="pic">
                         </div>
                     </a>
-                    <button class="wishlist-btn" type="button"
+                    <button class="wishlist-btn favorite-btn" type="button"
                             aria-label="Add The Little Prince to wishlist">
                             <i class="fa-regular fa-heart"></i>
                     </button>
@@ -322,7 +323,7 @@
                     data-title="Crime and Punishment"
                     data-author="dostoevsky"
                     data-category="classic fiction psychology"
-                    data-price="24.90"
+                    data-price="18.50"
                     data-rating="4.7">
                 <div class="book-visual">
                 <a href="book-detail.html" class="book-object">
@@ -331,7 +332,7 @@
                         <img src="pic/crime-and-punishment-26427-1000x1500-webp.webp" alt="pic">
                     </div>
                 </a>
-                    <button class="wishlist-btn" type="button"
+                    <button class="wishlist-btn favorite-btn" type="button"
                             aria-label="Add Crime and Punishment to wishlist">
                             <i class="fa-regular fa-heart"></i>
                     </button>
@@ -349,7 +350,7 @@
                             <span>4.7</span>
                         </div>
                         <span class="detail-divider"></span>
-                        <strong class="book-price">$24.90</strong>
+                        <strong class="book-price">$18.50</strong>
                         <button class="cart-btns" type="button">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span>Add to cart</span>
@@ -435,10 +436,10 @@
         </div>
         </div>
       </footer>
-<script src="favorite-button.js">
-
-</script>
 <script src="js/mobile-menu.js"></script>
+<script src="js/favorite-button.js"></script>
+<script src="js/cart.js"></script>
+
 
 </body>
 </html>

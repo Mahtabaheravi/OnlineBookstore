@@ -3,32 +3,32 @@
       "id": 1,
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
-      "price": 12,
-      "image": "",
+      "price": 21.14,
+      "image": "pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg",
       "rating": 4.8
     },
     {
       "id": 2,
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
-      "price": 18,
-      "image": "",
+      "price": 28.18,
+      "image": "pic/33.jpg",
       "rating": 4.9
     },
     {
       "id": 3,
       "title": "The Little Prince",
       "author": "Antoine de Saint-Exupéry",
-      "price": 10,
-      "image": "",
+      "price": 10.00,
+      "image": "pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg",
       "rating": 4.8
     },
     {
       "id": 4,
       "title": "The Razor's Edge",
       "author": "W. Somerset Maugham",
-      "price": 14,
-      "image": "",
+      "price": 17.45,
+      "image": "pic/9780099284864.jpg",
       "rating": 4.6
     },
     {
@@ -36,23 +36,23 @@
       "title": "1984",
       "author": "George Orwell",
       "price": 13,
-      "image": "",
+      "image": "pic/71wANojhEKL._AC_UF350,350_QL50_.jpg",
       "rating": 4.9
     },
     {
       "id": 6,
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
-      "price": 16,
-      "image": "",
+      "price": 18.50,
+      "image": "pic/crime-and-punishment-26427-1000x1500-webp.webp",
       "rating": 4.9
     },
     {
       "id": 7,
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
-      "price": 14,
-      "image": "",
+      "price": 18.90,
+      "image": "pic/81NLDvyAHrL._AC_UF894,1000_QL80_.jpg",
       "rating": 4.8
     },
     {
@@ -60,7 +60,7 @@
       "title": "A Thousand Splendid Suns",
       "author": "Khaled Hosseini",
       "price": 15,
-      "image": "",
+      "image": "pic/81Myu1ZnYcL._AC_UF1000,1000_QL80_.jpg",
       "rating": 4.9
     },
     {
@@ -68,7 +68,7 @@
       "title": "Symphony of the Dead",
       "author": "Abbas Maroufi",
       "price": 14,
-      "image": "",
+      "image": "pic/300905.jpg",
       "rating": 4.8
     },
     {
@@ -76,31 +76,31 @@
       "title": "The Kite Runner",
       "author": "Khaled Hosseini",
       "price": 15,
-      "image": "",
+      "image": "pic/81CA-WqU+lL._AC_UF894,1000_QL80_.jpg",
       "rating": 4.9
     },
     {
       "id": 11,
       "title": "Jane Eyre",
       "author": "Charlotte Brontë",
-      "price": 14,
-      "image": "",
+      "price": 16.50,
+      "image": "pic/Jane Eyre.jpg",
       "rating": 4.8
     },
     {
       "id": 12,
       "title": "The Notebook",
       "author": "Nicholas Sparks",
-      "price": 13,
-      "image": "",
+      "price": 21.90,
+      "image": "pic/TheNotebook.webp",
       "rating": 4.6
     },
     {
       "id": 13,
       "title": "The Fault in Our Stars",
       "author": "John Green",
-      "price": 13,
-      "image": "",
+      "price": 17.40,
+      "image": "pic/TheFaultinOurStars.webp",
       "rating": 4.7
     },
     {
@@ -108,7 +108,7 @@
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "price": 20,
-      "image": "",
+      "image": "pic/brother.webp",
       "rating": 4.9
     },
     {
@@ -116,7 +116,7 @@
       "title": "The Idiot",
       "author": "Fyodor Dostoevsky",
       "price": 17,
-      "image": "",
+      "image": "pic/idote.webp",
       "rating": 4.8
     },
     {
@@ -124,7 +124,7 @@
       "title": "Demons",
       "author": "Fyodor Dostoevsky",
       "price": 18,
-      "image": "",
+      "image": "pic/demons.webp",
       "rating": 4.8
     }
   ]

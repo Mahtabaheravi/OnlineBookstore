@@ -29,14 +29,15 @@
      <button class="nav-icon search-btn" aria-label="Search">
        <i class="fa-solid fa-magnifying-glass"></i>
      </button>
-     <a href="#" class="nav-icon" aria-label="Wishlist">
-      <i class="fa-regular fa-heart"></i>
-      <span class="nav-count">0</span>
+     <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="nav-count wishlist-count">0</span>
      </a>
-     <a href="#" class="nav-icon" aria-label="Shopping Cart">
+
+     <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
         <i class="fa-solid fa-cart-shopping"></i>
-        <span class="nav-count">0</span>
-       </a>
+        <span class="nav-count cart-count">0</span>
+    </a>
        <div class="account-dropdown">
        <button class="account-btn">
         <i class="fa-regular fa-user"></i>
@@ -225,12 +226,12 @@
         <h2>Populer Books</h2>
       </div>
       <div class="shop-grid">
-        <div class="shop-card">
+        <div class="shop-card" data-id="1">
 
             <div class="shop-card-cover">
                 <a href="book-detail.html">
                 <img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="pic">
-                <button class="favorite-btn" type="button">
+                <button class="favorite-btn" data-id="1" aria-label="Add to wishlist">
                     <i class="fa-regular fa-heart"></i>
                 </button></a>
             </div>
@@ -254,12 +255,12 @@
                 </div>
             </div>
         </div>
-        <div class="shop-card">
+        <div class="shop-card" data-id="2">
 
             <div class="shop-card-cover">
                 <a href="#">
                 <img src="pic/33.jpg" alt="pic">
-                <button class="favorite-btn" type="button">
+                <button class="favorite-btn" data-id="2" aria-label="Add to wishlist">
                     <i class="fa-regular fa-heart"></i>
                 </button></a>
             </div>
@@ -283,12 +284,12 @@
                 </div>
             </div>
         </div>
-        <div class="shop-card">
+        <div class="shop-card " data-id="3">
 
             <div class="shop-card-cover">
                 <a href="">
                 <img src="pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg" alt="pic">
-                <button class="favorite-btn" type="button">
+                <button class="favorite-btn" data-id="3" aria-label="Add to wishlist">
                     <i class="fa-regular fa-heart"></i>
                 </button></a>
             </div>
@@ -313,12 +314,12 @@
                 </div>
             </div>
         </div>
-        <div class="shop-card">
+        <div class="shop-card" data-id="4">
 
             <div class="shop-card-cover">
                 <a href="#">
                 <img src="pic/9780099284864.jpg" alt="pic">
-                <button class="favorite-btn" type="button">
+                <button class="favorite-btn" data-id="4" aria-label="Add to wishlist">
                     <i class="fa-regular fa-heart"></i>
                 </button></a>
             </div>
@@ -655,9 +656,7 @@
 </footer>
 <script src="js/mobile-menu.js"></script>
 <script src="js/discount-slider.js"></script>
-<script src="js/favorite-button.js">
-
-</script>
-
+<script src="js/favorite-button.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>

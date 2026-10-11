@@ -29,14 +29,15 @@
          <button class="nav-icon search-btn" aria-label="Search">
            <i class="fa-solid fa-magnifying-glass"></i>
          </button>
-         <a href="#" class="nav-icon" aria-label="Wishlist">
-          <i class="fa-regular fa-heart"></i>
-          <span class="nav-count">0</span>
-         </a>
-         <a href="#" class="nav-icon" aria-label="Shopping Cart">
+         <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count wishlist-count">0</span>
+        </a>
+        
+        <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="nav-count">0</span>
-           </a>
+            <span class="nav-count cart-count">0</span>
+        </a>
            <div class="account-dropdown">
            <button class="account-btn">
             <i class="fa-regular fa-user"></i>
@@ -237,7 +238,9 @@
                     <a href="book-detail.html">
                         <img src="pic/crime-and-punishment-26427-1000x1500-webp.webp" alt="pic">
                     </a>
-                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="work-heart favorite-btn" data-id="6" type="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
                 <div class="work-info">
                     <span>1866</span>
@@ -250,7 +253,9 @@
                 <div class="work-cover">
                     <span class="work-number">02</span>
                     <a href="#"><img src="pic/brother.webp" alt="pic"></a>
-                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="work-heart favorite-btn" data-id="14" type="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
                 <div class="work-info">
                     <span>1880</span>
@@ -265,7 +270,9 @@
                     <a href="#">
                         <img src="pic/idote.webp" alt="pic">
                     </a>
-                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="work-heart favorite-btn" data-id="15" type="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
                 <div class="work-info">
                     <span>1869</span>
@@ -281,7 +288,9 @@
                     <a href="#">
                         <img src="pic/demons.webp" alt="pic">
                     </a>
-                    <button class="work-heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="work-heart favorite-btn" data-id="16" type="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
                 <div class="work-info">
                     <span>1872</span>
@@ -386,5 +395,8 @@
     </div>
   </footer>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/favorite-button.js"></script>
+  <script src="js/cart.js"></script>
+
 </body>
 </html>

@@ -34,14 +34,15 @@
    <button class="nav-icon search-btn" aria-label="Search">
      <i class="fa-solid fa-magnifying-glass"></i>
    </button>
-   <a href="#" class="nav-icon" aria-label="Wishlist">
+   <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
     <i class="fa-regular fa-heart"></i>
-    <span class="nav-count">0</span>
+    <span class="nav-count wishlist-count">0</span>
    </a>
-   <a href="#" class="nav-icon" aria-label="Shopping Cart">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <span class="nav-count">0</span>
-     </a>
+
+   <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="nav-count cart-count">0</span>
+   </a>
      <div class="account-dropdown">
      <button class="account-btn">
       <i class="fa-regular fa-user"></i>
@@ -104,7 +105,7 @@
             <img
                 src="pic/crime-and-punishment-26427-1000x1500-webp.webp"
                 alt="pic" class="bd-book-img">
-            <button class="bd-fav-float"><i class="fa-regular fa-heart"></i></button>
+            <button class="bd-fav-float favorite-btn"><i class="fa-regular fa-heart"></i></button>
       </div>
       <div class="bd-hero-info">
         <span class="bd-tag">PSYCHOLOGICAL FICTION</span>
@@ -366,7 +367,7 @@
           <article class="related-book">
             <div class="related-cover">
               <a href="#"><img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="pic"></a>
-            <button class="related-heart"><i class="fa-regular fa-heart"></i></button>
+            <button class="related-heart favorite-btn"><i class="fa-regular fa-heart"></i></button>
             </div>
             <div class="related-info">
               <h3>The Metamorphosis</h3>
@@ -383,7 +384,7 @@
           <article class="related-book">
             <div class="related-cover"><a href="#">
             <img src="pic/9780099284864.jpg" alt="pic"></a>
-            <button class="related-heart"><i class="fa-regular fa-heart"></i></button>
+            <button class="related-heart favorite-btn"><i class="fa-regular fa-heart"></i></button>
             </div>
             <div class="related-info">
               <h3>The Razor's Edge</h3>
@@ -400,7 +401,7 @@
           <article class="related-book">
             <div class="related-cover">
               <a href="#"><img src="pic/300905.jpg" alt="pic"></a>
-              <button class="related-heart"><i class="fa-regular fa-heart"></i></button>
+              <button class="related-heart favorite-btn"><i class="fa-regular fa-heart"></i></button>
             </div>
             <div class="related-info">
               <h3>Symphony of the Dead</h3>
@@ -417,7 +418,7 @@
           <article class="related-book">
             <div class="related-cover">
              <a href="#"><img src="pic/81j4C6j3dRL._AC_UF1000,1000_QL80_.jpg" alt="Game of Thrones"></a>
-            <button class="related-heart"><i class="fa-regular fa-heart"></i></button>
+            <button class="related-heart favorite-btn"><i class="fa-regular fa-heart"></i></button>
             </div>
             <div class="related-info">
               <h3>The Lord of the Rings</h3>
@@ -486,5 +487,8 @@
 </footer>
 <script src="js/mobile-menu.js"></script>
 <script src="js/reviews.js"></script>
+<script src="js/favorite-button.js"></script>
+<script src="js/cart.js"></script>
+
 </body>
 </html>
