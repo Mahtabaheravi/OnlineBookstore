@@ -1,4 +1,3 @@
-
 const CART_KEY = "shamamaCart";
 const BOOKS_URL = "data/books.json";
 function getCart() {
@@ -131,16 +130,24 @@ async function renderCart() {
         cartContainer.textContent = "Could not load your cart. Please try again.";
     }
 }
+
+
 document.addEventListener("click", event => {
-    const button = event.target.closest(".cart-btn");
+    const button = event.target.closest(
+        ".cart-btns, .cart-btn, .bd-btn-cart"
+    );
+
     if (!button) return;
-    const card = button.closest(".shop-card");
-    if (!card) return;
-    const bookId = card.dataset.id;
-    if (bookId) {
+    const card = button.closest(".shop-card, .book-row");
+    const bookId = button.dataset.id || card?.dataset.id;
+    if (bookId !== undefined) {
         addToCart(bookId);
+    } else {
+        console.error("Book ID is missing.");
     }
 });
+
+
 
 
 document.addEventListener("click", event => {

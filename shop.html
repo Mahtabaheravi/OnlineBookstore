@@ -211,7 +211,7 @@
             </div>
         </div>
         <div class="books-list" id="booksGrid">
-            <article class="book-row" data-title="The Metamorphosis" data-author="kafka" data-category="classic fiction"
+            <article class="book-row" data-id="1" data-title="The Metamorphosis" data-author="kafka" data-category="classic fiction"
                     data-price="21.14"
                     data-rating="3.9">
                 <div class="book-visual">
@@ -221,7 +221,7 @@
                             <img src="pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg" alt="pic">
                     </div>
                 </a>
-                    <button class="wishlist-btn favorite-btn" type="button" aria-label="Add The Metamorphosis to wishlist">
+                    <button class="wishlist-btn favorite-btn" data-id="1" type="button" aria-label="Add The Metamorphosis to wishlist">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </div>
@@ -237,14 +237,14 @@
                         </div>
                         <span class="detail-divider"></span>
                         <strong class="book-price">$21.14</strong>
-                        <button class="cart-btns" type="button">
+                        <button class="cart-btns" type="button" data-id="1">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span>Add to cart</span>
                         </button>
                         </div>
                 </div>
             </article>
-            <article class="book-row" data-title="The Lord of the Rings"
+            <article class="book-row" data-id="2" data-title="The Lord of the Rings"
                     data-author="tolkien"
                     data-category="fiction"
                     data-price="28.18"
@@ -256,7 +256,7 @@
                             <img src="pic/33.jpg" alt="pic">
                         </div>
                     </a>
-                        <button class="wishlist-btn favorite-btn" type="button" aria-label="Add The Lord of the Rings to wishlist">
+                        <button class="wishlist-btn favorite-btn" data-id="2" type="button" aria-label="Add The Lord of the Rings to wishlist">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -274,14 +274,14 @@
                             </div>
                             <span class="detail-divider"></span>
                             <strong class="book-price">$28.18</strong>
-                            <button class="cart-btns" type="button">
+                            <button class="cart-btns" type="button"data-id="2">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span>Add to cart</span>
                             </button>
                         </div>
                 </div>
             </article>
-            <article class="book-row" data-title="The Little Prince" data-author="saint-exupery"
+            <article class="book-row" data-id="3" data-title="The Little Prince" data-author="saint-exupery"
                     data-category="children fiction"
                     data-price="10"
                     data-rating="4.3">
@@ -292,7 +292,7 @@
                             <img src="pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg" alt="pic">
                         </div>
                     </a>
-                    <button class="wishlist-btn favorite-btn" type="button"
+                    <button class="wishlist-btn favorite-btn" data-id="3" type="button"
                             aria-label="Add The Little Prince to wishlist">
                             <i class="fa-regular fa-heart"></i>
                     </button>
@@ -311,7 +311,7 @@
                         </div>
                         <span class="detail-divider"></span>
                         <strong class="book-price">$10.00</strong>
-                        <button class="cart-btns" type="button">
+                        <button class="cart-btns" type="button" data-id="3">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span>Add to cart</span>
                         </button>
@@ -319,6 +319,7 @@
                 </div>
             </article>
             <article
+                    data-id="6"
                     class="book-row"
                     data-title="Crime and Punishment"
                     data-author="dostoevsky"
@@ -332,7 +333,7 @@
                         <img src="pic/crime-and-punishment-26427-1000x1500-webp.webp" alt="pic">
                     </div>
                 </a>
-                    <button class="wishlist-btn favorite-btn" type="button"
+                    <button class="wishlist-btn favorite-btn" data-id="6" type="button"
                             aria-label="Add Crime and Punishment to wishlist">
                             <i class="fa-regular fa-heart"></i>
                     </button>
@@ -351,7 +352,7 @@
                         </div>
                         <span class="detail-divider"></span>
                         <strong class="book-price">$18.50</strong>
-                        <button class="cart-btns" type="button">
+                        <button class="cart-btns" type="button" data-id="6">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span>Add to cart</span>
                         </button>
@@ -439,7 +440,7 @@
 <script src="js/mobile-menu.js"></script>
 <script src="js/favorite-button.js"></script>
 <script src="js/cart.js"></script>
-
+<script src="js/shop.js"></script>
 
 </body>
 </html>

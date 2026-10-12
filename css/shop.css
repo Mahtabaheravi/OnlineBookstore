@@ -690,6 +690,18 @@ select {
     margin: 0 3px;
 }
 
+.book-row[hidden],
+.empty-state[hidden],
+.pagination[hidden] {
+    display: none !important;
+}
+
+.page-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 
 @media (max-width: 1200px) {
     .shop-intro {

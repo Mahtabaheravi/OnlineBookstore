@@ -1,130 +1,211 @@
+
 [
-    {
-      "id": 1,
-      "title": "The Metamorphosis",
-      "author": "Franz Kafka",
-      "price": 21.14,
-      "image": "pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg",
-      "rating": 4.8
-    },
-    {
-      "id": 2,
-      "title": "The Lord of the Rings",
-      "author": "J.R.R. Tolkien",
-      "price": 28.18,
-      "image": "pic/33.jpg",
-      "rating": 4.9
-    },
-    {
-      "id": 3,
-      "title": "The Little Prince",
-      "author": "Antoine de Saint-Exupéry",
-      "price": 10.00,
-      "image": "pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg",
-      "rating": 4.8
-    },
-    {
-      "id": 4,
-      "title": "The Razor's Edge",
-      "author": "W. Somerset Maugham",
-      "price": 17.45,
-      "image": "pic/9780099284864.jpg",
-      "rating": 4.6
-    },
-    {
-      "id": 5,
-      "title": "1984",
-      "author": "George Orwell",
-      "price": 13,
-      "image": "pic/71wANojhEKL._AC_UF350,350_QL50_.jpg",
-      "rating": 4.9
-    },
-    {
-      "id": 6,
-      "title": "Crime and Punishment",
-      "author": "Fyodor Dostoevsky",
-      "price": 18.50,
-      "image": "pic/crime-and-punishment-26427-1000x1500-webp.webp",
-      "rating": 4.9
-    },
-    {
-      "id": 7,
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "price": 18.90,
-      "image": "pic/81NLDvyAHrL._AC_UF894,1000_QL80_.jpg",
-      "rating": 4.8
-    },
-    {
-      "id": 8,
-      "title": "A Thousand Splendid Suns",
-      "author": "Khaled Hosseini",
-      "price": 15,
-      "image": "pic/81Myu1ZnYcL._AC_UF1000,1000_QL80_.jpg",
-      "rating": 4.9
-    },
-    {
-      "id": 9,
-      "title": "Symphony of the Dead",
-      "author": "Abbas Maroufi",
-      "price": 14,
-      "image": "pic/300905.jpg",
-      "rating": 4.8
-    },
-    {
-      "id": 10,
-      "title": "The Kite Runner",
-      "author": "Khaled Hosseini",
-      "price": 15,
-      "image": "pic/81CA-WqU+lL._AC_UF894,1000_QL80_.jpg",
-      "rating": 4.9
-    },
-    {
-      "id": 11,
-      "title": "Jane Eyre",
-      "author": "Charlotte Brontë",
-      "price": 16.50,
-      "image": "pic/Jane Eyre.jpg",
-      "rating": 4.8
-    },
-    {
-      "id": 12,
-      "title": "The Notebook",
-      "author": "Nicholas Sparks",
-      "price": 21.90,
-      "image": "pic/TheNotebook.webp",
-      "rating": 4.6
-    },
-    {
-      "id": 13,
-      "title": "The Fault in Our Stars",
-      "author": "John Green",
-      "price": 17.40,
-      "image": "pic/TheFaultinOurStars.webp",
-      "rating": 4.7
-    },
-    {
-      "id": 14,
-      "title": "The Brothers Karamazov",
-      "author": "Fyodor Dostoevsky",
-      "price": 20,
-      "image": "pic/brother.webp",
-      "rating": 4.9
-    },
-    {
-      "id": 15,
-      "title": "The Idiot",
-      "author": "Fyodor Dostoevsky",
-      "price": 17,
-      "image": "pic/idote.webp",
-      "rating": 4.8
-    },
-    {
-      "id": 16,
-      "title": "Demons",
-      "author": "Fyodor Dostoevsky",
-      "price": 18,
-      "image": "pic/demons.webp",
-      "rating": 4.8
-    }
-  ]
+  {
+    "id": 1,
+    "title": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "authorSlug": "kafka",
+    "category": ["classic", "fiction"],
+    "price": 21.14,
+    "image": "pic/81QOkf8RSIL._AC_UF1000,1000_QL80_.jpg",
+    "rating": 4.8,
+    "description": "A strange and thought-provoking story about identity, isolation, and family.",
+    "date": "2026-01-01",
+    "featured": 1
+  },
+  {
+    "id": 2,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "authorSlug": "tolkien",
+    "category": ["fiction"],
+    "price": 28.18,
+    "image": "pic/33.jpg",
+    "rating": 4.9,
+    "description": "An epic fantasy adventure about friendship, courage, and the struggle between good and evil.",
+    "date": "2026-01-02",
+    "featured": 2
+  },
+  {
+    "id": 3,
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "authorSlug": "saint-exupery",
+    "category": ["children", "fiction"],
+    "price": 10.00,
+    "image": "pic/81YgzWyiUfL._AC_UF1000,1000_QL80_.jpg",
+    "rating": 4.8,
+    "description": "A poetic tale about friendship, love, imagination, and the meaning of life.",
+    "date": "2026-01-03",
+    "featured": 3
+  },
+  {
+    "id": 4,
+    "title": "The Razor's Edge",
+    "author": "W. Somerset Maugham",
+    "authorSlug": "maugham",
+    "category": ["fiction", "psychology"],
+    "price": 17.45,
+    "image": "pic/9780099284864.jpg",
+    "rating": 4.6,
+    "description": "A novel about a man's search for meaning and a deeper understanding of life.",
+    "date": "2026-01-04",
+    "featured": 4
+  },
+  {
+    "id": 5,
+    "title": "1984",
+    "author": "George Orwell",
+    "authorSlug": "orwell",
+    "category": ["classic", "fiction"],
+    "price": 13.00,
+    "image": "pic/71wANojhEKL._AC_UF350,350_QL50_.jpg",
+    "rating": 4.9,
+    "description": "A dystopian novel about surveillance, propaganda, power, and individual freedom.",
+    "date": "2026-01-05",
+    "featured": 5
+  },
+  {
+    "id": 6,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "authorSlug": "dostoevsky",
+    "category": ["classic", "fiction", "psychology"],
+    "price": 18.50,
+    "image": "pic/crime-and-punishment-26427-1000x1500-webp.webp",
+    "rating": 4.9,
+    "description": "A psychological novel exploring guilt, morality, suffering, and redemption.",
+    "date": "2026-01-06",
+    "featured": 6
+  },
+  {
+    "id": 7,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "authorSlug": "austen",
+    "category": ["classic", "romance", "fiction"],
+    "price": 18.90,
+    "image": "pic/81NLDvyAHrL._AC_UF894,1000_QL80_.jpg",
+    "rating": 4.8,
+    "description": "A classic novel about love, social expectations, first impressions, and personal growth.",
+    "date": "2026-01-07",
+    "featured": 7
+  },
+  {
+    "id": 8,
+    "title": "A Thousand Splendid Suns",
+    "author": "Khaled Hosseini",
+    "authorSlug": "hosseini",
+    "category": ["fiction"],
+    "price": 15.00,
+    "image": "pic/81Myu1ZnYcL._AC_UF1000,1000_QL80_.jpg",
+    "rating": 4.9,
+    "description": "A moving story of friendship, resilience, and the lives of two Afghan women.",
+    "date": "2026-01-08",
+    "featured": 8
+  },
+  {
+    "id": 9,
+    "title": "Symphony of the Dead",
+    "author": "Abbas Maroufi",
+    "authorSlug": "maroufi",
+    "category": ["fiction"],
+    "price": 14.00,
+    "image": "pic/300905.jpg",
+    "rating": 4.8,
+    "description": "A literary novel exploring family conflict, memory, and social change.",
+    "date": "2026-01-09",
+    "featured": 9
+  },
+  {
+    "id": 10,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "authorSlug": "hosseini",
+    "category": ["fiction"],
+    "price": 15.00,
+    "image": "pic/81CA-WqU+lL._AC_UF894,1000_QL80_.jpg",
+    "rating": 4.9,
+    "description": "A powerful story of friendship, betrayal, guilt, and the possibility of redemption.",
+    "date": "2026-01-10",
+    "featured": 10
+  },
+  {
+    "id": 11,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "authorSlug": "bronte",
+    "category": ["classic", "romance", "fiction"],
+    "price": 16.50,
+    "image": "pic/Jane Eyre.jpg",
+    "rating": 4.8,
+    "description": "A classic novel about independence, love, personal integrity, and resilience.",
+    "date": "2026-01-11",
+    "featured": 11
+  },
+  {
+    "id": 12,
+    "title": "The Notebook",
+    "author": "Nicholas Sparks",
+    "authorSlug": "sparks",
+    "category": ["romance", "fiction"],
+    "price": 21.90,
+    "image": "pic/TheNotebook.webp",
+    "rating": 4.6,
+    "description": "A romantic story about lasting love, memories, and devotion.",
+    "date": "2026-01-12",
+    "featured": 12
+  },
+  {
+    "id": 13,
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "authorSlug": "green",
+    "category": ["romance", "fiction"],
+    "price": 17.40,
+    "image": "pic/TheFaultinOurStars.webp",
+    "rating": 4.7,
+    "description": "A moving young-adult novel about love, friendship, and finding meaning in difficult circumstances.",
+    "date": "2026-01-13",
+    "featured": 13
+  },
+  {
+    "id": 14,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "authorSlug": "dostoevsky",
+    "category": ["classic", "fiction", "psychology"],
+    "price": 20.00,
+    "image": "pic/brother.webp",
+    "rating": 4.9,
+    "description": "A philosophical novel about faith, morality, freedom, and family conflict.",
+    "date": "2026-01-14",
+    "featured": 14
+  },
+  {
+    "id": 15,
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "authorSlug": "dostoevsky",
+    "category": ["classic", "fiction", "psychology"],
+    "price": 17.00,
+    "image": "pic/idote.webp",
+    "rating": 4.8,
+    "description": "A novel exploring kindness, innocence, society, and human nature.",
+    "date": "2026-01-15",
+    "featured": 15
+  },
+  {
+    "id": 16,
+    "title": "Demons",
+    "author": "Fyodor Dostoevsky",
+    "authorSlug": "dostoevsky",
+    "category": ["classic", "fiction", "psychology"],
+    "price": 18.00,
+    "image": "pic/demons.webp",
+    "rating": 4.8,
+    "description": "A political and psychological novel about radical ideas, social unrest, and moral responsibility.",
+    "date": "2026-01-16",
+    "featured": 16
+  }
+]
