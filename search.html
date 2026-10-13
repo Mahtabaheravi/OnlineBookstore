@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books | Shamama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+       <img src="pic/lastlogo.png" alt="logo">
+       <span>Shamama</span>
+        </div>
+       <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+       </nav>
+       <div class="nav-action">
+        <a href="search.html" class="nav-icon search-btn" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+         <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count wishlist-count">0</span>
+         </a>
+    
+         <a href="cart.html" class="nav-icon" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-count cart-count">0</span>
+        </a>
+           <div class="account-dropdown">
+           <button class="account-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+            <i class="fa-solid fa-chevron-down account-arrow"></i>
+           </button>
+           <div class="account-menu">
+            <a href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+            <a href="register.html">
+                <i class="fa-solid fa-user-plus"></i>
+                Creat Account
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-box"></i>
+                My Order
+            </a>
+            <div class="account-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+           </div>
+           </div>
+           <button class="menu-toggle" id="menuToggle" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+       </div>
+    
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-navigation">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    
+    <main class="search-page">
+        <section class="search-hero">
+            <span class="search-label">
+                <i class="fa-solid fa-book-open"></i>
+                YOUR NEXT CHAPTER STARTS HERE
+            </span>
+            <h1>Find your next <em>favorite book.</em></h1>
+            <p>Search for stories, discover new authors, and find the books you have been looking for.</p>
+            <form class="search-form" id="searchForm">
+                <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+                <input type="search" id="searchInput" placeholder="Search by title, author, or genre..." aria-label="Search books" autocomplete="off">
+                <button type="button" id="clearSearch"
+                    class="clear-search" aria-label="Clear search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button type="submit" class="search-submit">
+                    Search
+                </button>
+            </form>
+            <div class="search-hint">
+                <i class="fa-regular fa-lightbulb"></i>Try searching for Kafka, 1984, or Fiction
+            </div>
+        </section>
+        <section class="search-results-section">
+            <div class="search-results-heading">
+                <div>
+                    <span class="results-label">EXPLORE THE COLLECTION</span>
+                    <h2 id="resultsTitle">Discover Books</h2>
+                </div>
+                <span id="resultsCount" class="results-count"> 0 books</span>
+            </div>
+            <div id="searchMessage" class="search-message">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>What would you like to read?</h3>
+                <p>Enter a book title, author's name, or genre to get started.</p>
+            </div>
+            <div class="search-results-grid" id="searchResults"></div>
+        </section>
+    </main>
+    <footer class="search-footer">
+        <a href="index.html" class="footer-back">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+        <p>Shamama — A quiet place for beautiful stories.</p>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

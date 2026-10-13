@@ -949,6 +949,35 @@
 }
 
 
+.form-status {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+.form-status.error {
+    color: #8b2929;
+    background: #f9e8e5;
+    border: 1px solid #e8c1bb;
+}
+
+.form-status.success {
+    color: #315c50;
+    background: #e8f1eb;
+    border: 1px solid #bfd5c6;
+}
+
+.form-field input:required:invalid:focus,
+.form-field textarea:invalid:focus {
+    outline-color: #b85c50;
+}
+
 @media (max-width: 1200px) {
     .contact-hero {
         padding-left: 5%;
