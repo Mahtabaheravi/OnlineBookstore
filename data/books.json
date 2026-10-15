@@ -148,7 +148,7 @@
     "title": "The Notebook",
     "author": "Nicholas Sparks",
     "authorSlug": "sparks",
-    "category": ["romance", "fiction"],
+    "category": ["romance", "contemporary", "fiction"],
     "price": 21.90,
     "image": "pic/TheNotebook.webp",
     "rating": 4.6,
@@ -161,7 +161,7 @@
     "title": "The Fault in Our Stars",
     "author": "John Green",
     "authorSlug": "green",
-    "category": ["romance", "fiction"],
+    "category": ["romance", "young-adult", "fiction"],
     "price": 17.40,
     "image": "pic/TheFaultinOurStars.webp",
     "rating": 4.7,
@@ -208,4 +208,5 @@
     "date": "2026-01-16",
     "featured": 16
   }
+  
 ]

@@ -15,12 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fullNameInput.addEventListener("input", function () {
         const name = fullNameInput.value.trim();
+    
         if (name === "") {
             nameError.textContent = "Please enter your full name";
             fullNameInput.classList.remove("valid");
         }
         else if (name.length < 3) {
             nameError.textContent = "Name must be at least 3 characters";
+            fullNameInput.classList.remove("valid");
+        }
+        else if (name.length > 30) {
+            nameError.textContent = "Name cannot exceed 30 characters";
+            fullNameInput.classList.remove("valid");
+        }
+        else if (!/^[\p{L}\p{M}]+(?:[ '-][\p{L}\p{M}]+)*$/u.test(name)) {
+            nameError.textContent = "Name can contain letters, spaces, hyphens and apostrophes only";
             fullNameInput.classList.remove("valid");
         }
         else {
@@ -30,12 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     emailInput.addEventListener("input", function () {
         const email = emailInput.value.trim();
+    
         if (email === "") {
             emailError.textContent = "Please enter your email";
             emailInput.classList.remove("valid");
         }
-        else if(!email.includes("@") || !email.includes(".")){
-            emailError.textContent = "Please enter a valid email";
+        else if (email.length > 50) {
+            emailError.textContent = "Email cannot exceed 50 characters";
+            emailInput.classList.remove("valid");
+        }
+        else if (/\s/.test(email)) {
+            emailError.textContent = "Email cannot contain spaces";
+            emailInput.classList.remove("valid");
+        }
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            emailError.textContent = "Please enter a valid email address";
             emailInput.classList.remove("valid");
         }
         else {
@@ -170,20 +188,34 @@ document.addEventListener("DOMContentLoaded", function () {
             formMessage.classList.add("error");
             return;
         }
-        const existingUser = JSON.parse(localStorage.getItem("shamamaUser"));
-        if (existingUser && existingUser.email.toLowerCase() === email) {
-            formMessage.textContent = "This account already exists";
-            formMessage.classList.add("error");
-            emailError.textContent = "This email is already registered.";
-            emailInput.focus();
-            return;
-        }
-        const user = {
-            fullName: name,
-            email: email,
-            password: password
-        };
-        localStorage.setItem("shamamaUser", JSON.stringify(user));
+        
+const users = JSON.parse(localStorage.getItem("shamamaUsers")) || [];
+
+const existingUser = users.find(function (user) {
+    return user.email.toLowerCase() === email;
+});
+
+if (existingUser) {
+    formMessage.textContent = "This account already exists";
+    formMessage.classList.add("error");
+    emailError.textContent = "This email is already registered.";
+    emailInput.focus();
+    return;
+}
+
+const user = {
+    id: Date.now(),
+    fullName: name,
+    email: email,
+    password: password,
+    role: 0,
+    createdAt: new Date().toISOString()
+};
+
+users.push(user);
+
+localStorage.setItem("shamamaUsers", JSON.stringify(users));
+
 
         formMessage.textContent = "✓ Registration successful!";
         formMessage.classList.add("success");

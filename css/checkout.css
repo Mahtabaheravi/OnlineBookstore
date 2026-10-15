@@ -1,0 +1,926 @@
+:root {
+    --cream: #f8f5ef;
+    --light: #fdfbf7;
+    --white: #fffdf8;
+    --text: #292722;
+    --soft: #514b42;
+    --muted: #858078;
+    --gold: #b4935b;
+    --gold-dark: #8d703f;
+    --gold-pale: #f1e3c5;
+    --border: #ded7ca;
+    --green: #61734d;
+    --red: #a64235;
+    --shadow: 0 12px 35px rgba(70, 52, 27, 0.07);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+[hidden] {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button,
+a,
+input,
+textarea {
+    outline-color: var(--gold);
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+.checkout-container {
+    width: min(1160px, 92%);
+    margin: 0 auto;
+    padding: 35px 0 65px;
+}
+.checkout-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.eyebrow {
+    color: var(--gold-dark);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.checkout-heading h1,
+.confirmation-card h2 {
+    font: 500 clamp(30px, 4vw, 43px)/1.2 "Playfair Display", serif;
+    margin: 10px 0;
+}
+
+.checkout-heading > p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.checkout-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #aaa39a;
+}
+
+.step > span {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+.step.active {
+    color: var(--text);
+}
+
+.step.active > span {
+    color: white;
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+}
+
+.step p {
+    font-size: 11px;
+}
+
+.step-line {
+    width: 35px;
+    height: 1px;
+    background: var(--border);
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.85fr);
+    align-items: start;
+    gap: 25px;
+}
+
+.checkout-details {
+    display: grid;
+    gap: 18px;
+    min-width: 0;
+}
+.checkout-card,
+.order-summary,
+.confirmation-card {
+    background: var(--white);
+    border: 1px solid rgba(180, 147, 91, 0.3);
+    border-radius: 13px;
+    box-shadow: var(--shadow);
+}
+.checkout-card {
+    padding: 25px;
+}
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 23px;
+}
+.heading-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--gold-dark);
+    background: #f5ecd9;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.card-heading h2,
+.summary-heading h2 {
+    font: 500 21px/1.3 "Playfair Display", serif;
+}
+
+.card-heading p {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+    margin-bottom: 17px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label,
+.coupon-section > label {
+    color: var(--soft);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.optional {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 13px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--light);
+    color: var(--text);
+    font-size: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa39a;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(180, 147, 91, 0.12);
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+    border-color: var(--red);
+}
+
+.error-message {
+    color: var(--red);
+    font-size: 10px;
+}
+.shipping-options,
+.payment-options {
+    display: grid;
+    gap: 11px;
+}
+
+.option-card,
+.payment-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--white);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.option-card:hover,
+.payment-card:hover {
+    border-color: var(--gold);
+}
+
+.option-card.selected,
+.payment-card.selected {
+    border-color: var(--gold);
+    background: #fcf7ed;
+    box-shadow: inset 0 0 0 1px rgba(180, 147, 91, 0.12);
+}
+
+.option-card input,
+.payment-card input {
+    accent-color: var(--gold-dark);
+    flex-shrink: 0;
+}
+
+.option-icon,
+.payment-icon {
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #f1e6d1;
+    color: var(--gold-dark);
+}
+
+.option-description,
+.payment-card > span:last-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.option-description strong,
+.option-description small,
+.payment-card strong,
+.payment-card small {
+    display: block;
+}
+
+.option-description strong,
+.payment-card strong {
+    font-size: 12px;
+}
+
+.option-description small,
+.payment-card small {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.option-price {
+    color: var(--gold-dark);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.shipping-note {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.shipping-note i {
+    margin-right: 5px;
+    color: var(--gold-dark);
+}
+.card-payment-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.card-payment-form .form-group {
+    margin-bottom: 17px;
+}
+
+.card-payment-form input {
+    letter-spacing: 0.3px;
+}
+
+.card-payment-form input.invalid {
+    border-color: var(--red);
+    box-shadow: 0 0 0 2px rgba(166, 66, 53, 0.08);
+}
+
+.card-payment-form .error-message {
+    display: block;
+    min-height: 0;
+    line-height: 1.4;
+}
+
+.card-payment-form .error-message:empty {
+    display: none;
+}
+
+.card-payment-form .form-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.card-payment-form .place-order-btn {
+    margin-top: 0;
+}
+
+.card-payment-message {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.card-payment-message:empty {
+    display: none;
+}
+
+.card-payment-message.success {
+    background: #eaf0e4;
+    color: var(--green);
+}
+
+.card-payment-message.error {
+    background: #f8e9e6;
+    color: var(--red);
+}
+
+.card-payment-form .place-order-btn:disabled {
+    opacity: 0.75;
+    cursor: wait;
+}
+.order-summary {
+    position: sticky;
+    top: 20px;
+    padding: 23px;
+}
+
+.summary-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-heading > span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.cart-items {
+    display: grid;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 57px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-cover {
+    display: block;
+    width: 57px;
+    height: 76px;
+    border-radius: 4px;
+    object-fit: cover;
+    background: #f0e6d4;
+    box-shadow: 3px 4px 9px rgba(45, 34, 21, 0.1);
+}
+
+.item-cover-placeholder {
+    display: grid;
+    place-items: center;
+    color: var(--gold-dark);
+    font-size: 20px;
+}
+
+.item-title {
+    font: 500 14px/1.3 "Playfair Display", serif;
+    overflow-wrap: anywhere;
+}
+
+.item-author,
+.item-quantity {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.item-price {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.empty-cart {
+    padding: 24px 10px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.empty-cart > i {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.empty-cart a {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--gold-dark);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.coupon-section {
+    padding: 17px 0;
+    border-top: 1px solid var(--border);
+}
+
+.coupon-section > label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.coupon-input {
+    display: flex;
+    gap: 7px;
+}
+
+.coupon-input input {
+    width: 0;
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--light);
+    color: var(--text);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.coupon-input button {
+    padding: 0 14px;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--gold-dark);
+    font-size: 11px;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s;
+}
+
+.coupon-input button:hover {
+    background: var(--gold-dark);
+    color: white;
+}
+
+.coupon-message {
+    min-height: 14px;
+    margin-top: 7px;
+    font-size: 10px;
+}
+
+.coupon-message.success {
+    color: var(--green);
+}
+
+.coupon-message.error {
+    color: var(--red);
+}
+.price-breakdown {
+    display: grid;
+    gap: 12px;
+    padding: 17px 0;
+    border-top: 1px solid var(--border);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+}
+
+.price-row > span {
+    color: var(--muted);
+}
+
+.price-row strong {
+    font-weight: 600;
+}
+
+.discount-row strong {
+    color: var(--green);
+}
+
+.price-divider {
+    height: 1px;
+    background: var(--border);
+}
+
+.total-row {
+    padding-top: 3px;
+}
+
+.total-row > span {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.total-row strong {
+    color: var(--gold-dark);
+    font: 600 26px/1.1 "Playfair Display", serif;
+}
+
+.currency-note {
+    color: var(--muted);
+    font-size: 9px;
+    text-align: right;
+}
+
+.secure-note {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 14px 0;
+    margin-top: 4px;
+    border-top: 1px solid var(--border);
+    color: var(--green);
+}
+
+.secure-note > i {
+    font-size: 19px;
+}
+
+.secure-note strong,
+.secure-note small {
+    display: block;
+}
+
+.secure-note strong {
+    font-size: 11px;
+}
+
+.secure-note small {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.terms-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 13px 0 4px;
+    color: var(--soft);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.terms-label input {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    accent-color: var(--gold-dark);
+    flex-shrink: 0;
+}
+
+.terms-error {
+    display: block;
+    color: var(--red);
+    font-size: 10px;
+}
+
+.place-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(110deg, #76582d, var(--gold-dark), var(--gold));
+    box-shadow: 0 9px 20px rgba(118, 88, 45, 0.19);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.place-order-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(118, 88, 45, 0.26);
+}
+
+.place-order-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.return-link {
+    display: block;
+    margin-top: 15px;
+    color: var(--gold-dark);
+    font-size: 11px;
+    text-align: center;
+}
+
+.return-link i {
+    margin-right: 5px;
+}
+.confirmation-card {
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.success-icon {
+    display: grid;
+    place-items: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e6eddf;
+    color: var(--green);
+    font-size: 25px;
+}
+
+.confirmation-card > p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.confirmation-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 13px;
+    border-radius: 7px;
+    background: var(--cream);
+    text-align: left;
+    font-size: 12px;
+}
+
+.confirmation-details span {
+    color: var(--muted);
+}
+
+.continue-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    border-radius: 7px;
+    background: var(--gold-dark);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+.continue-btn:hover {
+    background: var(--text);
+}
+
+#checkoutForm .form-group input:focus-visible,
+#checkoutForm .form-group textarea:focus-visible,
+.coupon-input input:focus-visible,
+.coupon-input button:focus-visible,
+.place-order-btn:focus-visible,
+.continue-btn:focus-visible,
+.back-to-shop:focus-visible,
+.return-link:focus-visible {
+    outline: 1px solid var(--gold);
+    
+}
+
+.confirmation-card[hidden],
+.card-payment-form[hidden],
+#placeOrderBtn[hidden],
+#discountRow[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 850px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: static;
+    }
+
+    .checkout-container {
+        width: min(680px, 92%);
+    }
+}
+
+@media (max-width: 520px) {
+    .checkout-header {
+        min-height: 70px;
+        padding: 12px 4%;
+    }
+
+    .checkout-logo img {
+        width: 115px;
+    }
+
+    .back-to-shop {
+        font-size: 10px;
+    }
+
+    .checkout-container {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .checkout-heading {
+        margin-bottom: 25px;
+    }
+
+    .checkout-steps {
+        gap: 7px;
+    }
+
+    .step {
+        gap: 5px;
+    }
+
+    .step p {
+        font-size: 9px;
+    }
+
+    .step > span {
+        width: 25px;
+        height: 25px;
+    }
+
+    .step-line {
+        width: 15px;
+    }
+
+    .checkout-card,
+    .order-summary {
+        padding: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .option-card,
+    .payment-card {
+        gap: 8px;
+        padding: 11px;
+    }
+
+    .option-description strong,
+    .payment-card strong {
+        font-size: 11px;
+    }
+
+    .option-description small,
+    .payment-card small {
+        font-size: 9px;
+    }
+
+    .option-price {
+        font-size: 11px;
+    }
+
+    .order-item {
+        grid-template-columns: 48px minmax(0, 1fr) auto;
+        gap: 9px;
+    }
+
+    .item-cover {
+        width: 48px;
+        height: 67px;
+    }
+
+    .item-title {
+        font-size: 12px;
+    }
+
+    .item-price {
+        font-size: 11px;
+    }
+
+    .confirmation-card {
+        padding: 30px 18px;
+    }
+
+    .card-payment-form {
+        margin-top: 16px;
+        padding-top: 16px;
+    }
+
+    .card-payment-form .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .card-payment-form .form-group input {
+        padding: 11px 9px;
+        font-size: 11px;
+    }
+
+    .card-payment-form .form-group label {
+        font-size: 10px;
+    }
+
+    .confirmation-details {
+        font-size: 11px;
+    }
+
+    .total-row strong {
+        font-size: 23px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

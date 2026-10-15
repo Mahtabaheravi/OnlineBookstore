@@ -81,22 +81,25 @@ document.addEventListener("DOMContentLoaded", function () {
             passwordInput.focus();
             return;
         }
-        const savedUser = JSON.parse(localStorage.getItem("shamamaUser"));
-        if (!savedUser) {
-            formMessage.textContent = "No account found. Please create an account first";
-            formMessage.classList.add("error");
-            return;
-        }
-        if (savedUser.email.toLowerCase() !== email) {
-            emailError.textContent = "No account found with this email";
-            emailInput.focus();
-            return;
-        }
-        if (savedUser.password !== password) {
-            passwordError.textContent = "Incorrect password";
-            passwordInput.focus();
-            return;
-        }
+                 
+const users = JSON.parse(localStorage.getItem("shamamaUsers")) || [];
+
+const savedUser = users.find(function (user) {
+    return user.email.toLowerCase() === email;
+});
+
+if (!savedUser) {
+    formMessage.textContent = "No account found. Please create an account first";
+    formMessage.classList.add("error");
+    return;
+}
+
+if (savedUser.password !== password) {
+    passwordError.textContent = "Incorrect password";
+    passwordInput.focus();
+    return;
+}
+
         if (rememberMe.checked) {
             localStorage.setItem("shamamaRememberedEmail", email);
         }
@@ -107,7 +110,15 @@ document.addEventListener("DOMContentLoaded", function () {
         formMessage.classList.add("success");
         sessionStorage.setItem("shamamaLoggedIn", "true");
 
-        sessionStorage.setItem("shamamaCurrentUser", JSON.stringify(savedUser));
+        sessionStorage.setItem(
+            "shamamaCurrentUser",
+            JSON.stringify({
+                id: savedUser.id,
+                fullName: savedUser.fullName,
+                email: savedUser.email,
+                role: Number(savedUser.role ?? 0)
+            })
+        );
 
         setTimeout(function () { window.location.href = "index.html";}, 1000);
     });

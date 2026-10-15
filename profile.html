@@ -1,31 +1,382 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>Readowl — Your Personal Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Shamama</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
-
-
 <body>
-
+    <header class="navbar">
+        <div class="logo">
+       <img src="pic/lastlogo.png" alt="logo">
+       <span>Shamama</span>
+        </div>
+       <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+       </nav>
+       <div class="nav-action">
+        <a href="search.html" class="nav-icon search-btn" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+         <a href="wishlist.html" class="nav-icon" aria-label="Wishlist" data-requires-login>
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count wishlist-count">0</span>
+         </a>
+    
+         <a href="cart.html" class="nav-icon" aria-label="Shopping Cart" data-requires-login>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="nav-count cart-count">0</span>
+        </a>
+           <div class="account-dropdown">
+            <button class="account-btn" type="button">
+                <i class="fa-regular fa-user"></i>
+                <span id="accountLabel">Account</span>
+                <i class="fa-solid fa-chevron-down account-arrow"></i>
+            </button>
+    <div class="account-menu" id="accountMenu">
+        <a href="login.html" data-guest-only>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+        </a>
+        <a href="register.html" data-guest-only>
+            <i class="fa-solid fa-user-plus"></i>
+            Create Account
+        </a>
+        <a href="profile.html" data-customer-only>
+            <i class="fa-regular fa-user"></i>
+            My Profile
+        </a>
+        <a href="order.html" data-customer-only>
+            <i class="fa-solid fa-box"></i>
+            My Order
+        </a>
+        <!-- <div class="account-divider" data-customer-only></div> -->
+        <div class="account-divider" data-admin-only></div>
+        <a href="admin.html" data-admin-only>
+            <i class="fa-solid fa-gauge-high"></i>
+            Admin Dashboard
+        </a>
+        <a href="manage-books.html" data-admin-only>
+            <i class="fa-solid fa-book"></i>
+            Manage Books
+        </a>
+        <a href="manage-orders.html" data-admin-only>
+            <i class="fa-solid fa-boxes-stacked"></i>
+            Manage Orders
+        </a>
+        <div class="account-divider" data-authenticated-only></div>
+        <a href="#" id="logoutBtn" data-authenticated-only>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+    </div>
+           </div>
+           </div>
+           <button class="menu-toggle" id="menuToggle" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+       </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-navigation">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+<main class="profile-page">
+    <section class="profile-heading">
+        <div>
+            <span class="profile-eyebrow">YOUR PERSONAL SPACE</span>
+            <h1>My <em>Profile</em></h1>
+            <p>Manage your account, keep track of your orders,
+                and make your reading experience your own.</p>
+        </div>
+        <a href="shop.html" class="profile-shop-btn">
+            <i class="fa-solid fa-book-open"></i>
+            Explore Books
+        </a>
+    </section>
+    <section class="profile-welcome">
+        <div class="welcome-avatar" id="welcomeAvatar">R</div>
+        <div class="welcome-text">
+            <span class="welcome-label">WELCOME BACK</span>
+            <h2 id="welcomeName">Reader</h2>
+            <p id="welcomeEmail">Your personal reading space</p>
+        </div>
+        <div class="member-badge">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Book Lover</span>
+        </div>
+    </section>
+    <section class="profile-stats">
+        <a href="#orders" class="profile-stat">
+            <span class="stat-icon">
+                <i class="fa-solid fa-box-open"></i>
+            </span>
+            <span class="stat-label">Total Orders</span>
+            <strong id="totalOrders">0</strong>
+            <span class="stat-note">Your purchases</span>
+        </a>
+        <a href="wishlist.html" class="profile-stat">
+            <span class="stat-icon">
+                <i class="fa-regular fa-heart"></i>
+            </span>
+            <span class="stat-label">My Wishlist</span>
+            <strong id="totalWishlist">0</strong>
+            <span class="stat-note">Saved books</span>
+        </a>
+        <a href="cart.html" class="profile-stat">
+            <span class="stat-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span class="stat-label">Shopping Cart</span>
+            <strong id="totalCart">0</strong>
+            <span class="stat-note">Books in your cart</span>
+        </a>
+    </section>
+    <div class="profile-layout">
+        <aside class="profile-sidebar">
+            <div class="sidebar-heading">MY ACCOUNT</div>
+            <a href="#personalInfo" class="sidebar-link active">
+                <i class="fa-regular fa-user"></i>
+                Personal Information
+            </a>
+            <a href="#orders" class="sidebar-link">
+                <i class="fa-solid fa-box"></i>
+                Order History
+            </a>
+            <a href="wishlist.html" class="sidebar-link">
+                <i class="fa-regular fa-heart"></i>
+                My Wishlist
+            </a>
+            <a href="cart.html" class="sidebar-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Shopping Cart
+            </a>
+            <a href="#accountSettings" class="sidebar-link">
+                <i class="fa-solid fa-shield-halved"></i>
+                Account Settings
+            </a>
+            <div class="sidebar-divider"></div>
+            <a href="#" class="sidebar-link logout-link" id="sidebarLogout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Sign Out
+            </a>
+            <div class="sidebar-note">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <p>A quiet place for stories and readers.</p>
+            </div>
+        </aside>
+        <div class="profile-content">
+            <section class="profile-panel" id="personalInfo">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-eyebrow">YOUR DETAILS</span>
+                        <h2>Personal Information</h2>
+                        <p>Update the information associated with your account.</p>
+                    </div>
+                    <span class="panel-heading-icon">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </span>
+                </div>
+                <form id="profileForm">
+                    <div class="profile-form-grid">
+                        <div class="form-field">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" required maxlength="100">
+                        </div>
+                        <!-- <div class="form-field">
+                            <label for="profileEmail">Email Address</label>
+                            <input type="email" id="profileEmail"
+                                name="email" placeholder="you@example.com"
+                                autocomplete="email" required maxlength="150">
+                            <small>Changing this field does not change your login credentials.</small>
+                        </div> -->
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel" maxlength="30">
+                        </div>
+                        <div class="form-field">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" placeholder="Your country" autocomplete="country-name" maxlength="80">
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="address">Delivery Address</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Street, city, province..." autocomplete="street-address" maxlength="500"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="Your city" autocomplete="address-level2" maxlength="100">
+                        </div>
+                        <div class="form-field">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" id="postalCode" name="postalCode" placeholder="Postal code" autocomplete="postal-code" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn" id="cancelChanges">
+                            Cancel
+                        </button>
+                        <button type="submit" class="save-btn">
+                            <i class="fa-solid fa-check"></i>
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="profile-panel orders-panel" id="orders">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-eyebrow">YOUR PURCHASES</span>
+                        <h2>Order History</h2>
+                        <p>Review your recent bookstore purchases.</p>
+                    </div>
+                    <a href="cart.html" class="text-link">
+                        Go to Cart <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="orders-container" id="ordersContainer">
+                    <div class="empty-orders">
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>Your story starts here</h3>
+                        <p>You haven't placed any orders yet.
+                            Your purchases will appear here when available.</p>
+                        <a href="shop.html" class="empty-shop-btn">Find Your Next Book</a>
+                    </div>
+                </div>
+            </section>
+            <section class="profile-panel settings-panel" id="accountSettings">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-eyebrow">ACCOUNT PREFERENCES</span>
+                        <h2>Account Settings</h2>
+                        <p>Manage your account preferences.</p>
+                    </div>
+                    <span class="panel-heading-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </span>
+                </div>
+                <div class="setting-row">
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="setting-description">
+                        <h3>Email Notifications</h3>
+                        <p>Choose whether you want to receive bookstore updates.</p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="emailNotifications">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="setting-description">
+                        <h3>Password & Security</h3>
+                        <p>Keep your account access information up to date.</p>
+                    </div>
+                    <button type="button" class="setting-action" id="passwordBtn">
+                        Change Password
+                    </button>
+                </div>
+                <div class="setting-row">
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div class="setting-description">
+                        <h3>Sign Out</h3>
+                        <p>End your current session on this device.</p>
+                    </div>
+                    <button type="button" class="setting-action signout-action"
+                        id="settingsLogout">
+                        Sign Out
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="pic/lastlogo.png" alt="logo">
+          <span>Shamama</span>
+        </div>
+        <p>A quiet place for beautiful stories, thoughtful ideas, and books worth remembering.</p>
+        <div class="footer-socails">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <a href="shop.html">All Books</a>
+        <a href="categories.html">Browse Categories</a>
+        <a href="wishlist.html">My Wishlist</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="shop.html">Best Sellers</a>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="categories.html">All Genres</a>
+        <a href="shop.html">Featured Books</a>
+        <a href="author.html">Our Authors</a>
+        <a href="about.html">About Shamama</a>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">My Account</a>
+        <a href="cart.html">My Orders</a>
+        <a href="contact.html">Help & Support</a>
+      </div>
+  
+      <div class="footer-newssletter">
+        <span class="newssletter-label">STAY IN THE STORY</span>
+        <h3>Get bookish news <em>in your inbox</em></h3>
+        <p>Discover new arrivals, special offers, and stories worth reading.</p>
+        <form class="newssletter-form">
+          <input type="email" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/guest-guard.js"></script>
+<script src="js/account-role.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/discount-slider.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/favorite-button.js"></script>
+<script src="js/cart.js"></script>
 
 </body>
 </html>
